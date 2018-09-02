@@ -1,0 +1,16 @@
+{
+    "staff_roles": ["Moderators", "staff"],
+    "wiki_links": {
+        "wiki": "https://github.com/lucko/LuckPerms/wiki",
+        "install": "https://github.com/lucko/LuckPerms/wiki/Installation",
+        "bungee": "https://github.com/lucko/LuckPerms/wiki/Network-Installation",
+        "sync": "https://github.com/lucko/LuckPerms/wiki/Syncing-data-between-servers",
+        "usage": "https://github.com/lucko/LuckPerms/wiki/Usage",
+        "errors": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors",
+        "editor": "https://github.com/lucko/LuckPerms/wiki/Web-Editor",
+        "verbose": "https://github.com/lucko/LuckPerms/wiki/Verbose",
+        "meta": "https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta",
+        "context": "https://github.com/lucko/LuckPerms/wiki/Context",
+        "default": "https://github.com/lucko/LuckPerms/wiki/Default-Groups"
+    }
+}
