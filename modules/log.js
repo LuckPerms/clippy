@@ -1,4 +1,5 @@
 const discord = require("discord.js");
+var dateFormat = require('dateformat');
 const fs = require("fs");
 
 function pad(s, l) {
@@ -7,15 +8,8 @@ function pad(s, l) {
   return (("0".repeat(l)).substring(0, l - s.length) + s)
 }
 
-function getLogFileName() {
-  var d = new Date();
-  return `${d.getYear() + 1900}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}.log`
-}
-
-function getLogFileTime() {
-  var d = new Date();
-  return `${(d.getHours() > 12) ? pad(d.getHours() - 12) : pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())} ${(d.getHours() > 12) ? "PM" : "AM"}`
-}
+const getLogFileName = (date) => dateFormat(date, "yyyy-mm-dd")
+const getLogFileTime = (date) => dateFormat(date, "hh-MM-ss TT")
 
 module.exports = (client) => {
   client.on("message", (message) => {
