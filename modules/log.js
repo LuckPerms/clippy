@@ -2,7 +2,7 @@ const discord = require("discord.js");
 var dateFormat = require('dateformat');
 const fs = require("fs");
 
-const getLogFileName = (date) => dateFormat(date, "yyyy-mm-dd")
+const getLogFileName = (date) => dateFormat(date, "yyyy-mm-dd") + ".log"
 const getLogFileTime = (date) => dateFormat(date, "hh-MM-ss TT")
 
 module.exports = (client) => {
