@@ -8,7 +8,7 @@ function getLogFileName() {
 
 function getLogFileTime() {
   var d = new Date();
-  return `${((d.getHours() + 1) > 12) ? ((d.getHours() + 1) - 12) : (d.getHours() + 1)}:${d.getMinutes()}:${d.getSeconds()} ${((d.getHours() + 1) > 12) ? "PM" : "AM"}`
+  return `${(d.getHours() > 12) ? (d.getHours() - 12) : d.getHours()}:${d.getMinutes()}:${d.getSeconds()} ${(d.getHours() > 12) ? "PM" : "AM"}`
 }
 
 module.exports = (client) => {
