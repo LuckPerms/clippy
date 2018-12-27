@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "dateformat": "^3.0.3",
     "discord.js": "^11.4.2",
     "mz": "^2.7.0"
   }
