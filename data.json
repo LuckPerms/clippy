@@ -2,16 +2,16 @@
     "staff_roles": ["Moderators", "staff"],
     "member_role": "420316139986485250",
     "wiki_links": {
-        "wiki": "https://github.com/lucko/LuckPerms/wiki",
-        "install": "https://github.com/lucko/LuckPerms/wiki/Installation",
-        "bungee": "https://github.com/lucko/LuckPerms/wiki/Network-Installation",
-        "sync": "https://github.com/lucko/LuckPerms/wiki/Syncing-data-between-servers",
-        "usage": "https://github.com/lucko/LuckPerms/wiki/Usage",
-        "errors": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors",
-        "editor": "https://github.com/lucko/LuckPerms/wiki/Web-Editor",
-        "verbose": "https://github.com/lucko/LuckPerms/wiki/Verbose",
-        "meta": "https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta",
-        "context": "https://github.com/lucko/LuckPerms/wiki/Context",
-        "default": "https://github.com/lucko/LuckPerms/wiki/Default-Groups"
+        "wiki": "You can find the wiki of LuckPerms here:\n<https://github.com/lucko/LuckPerms/wiki>",
+        "install": "You can install LuckPerms on Spigot (including forks like PaperSpigot), Sponge, BungeeCord (Also including common forks), Velocity and others!\nRead the installation-page on the wiki for more info:\n<https://github.com/lucko/LuckPerms/wiki/Installation>",
+        "bungee": "You have to download and install LuckPermsBungee on your BungeeCord to manage BungeeCord permissions.\nLuckPermsBungee does **not** manage permissions on Spigot!\nRead this page for more info:\n<https://github.com/lucko/LuckPerms/wiki/Network-Installation>",
+        "sync": "To sync data between servers, you need to connect each LuckPerms to the same database (example: MySQL) and setup a messaging service (By default `sql`)\n<https://github.com/lucko/LuckPerms/wiki/Syncing-data-between-servers>",
+        "usage": "Here's a page, that helps you to understand and use LuckPerms!\n<https://github.com/lucko/LuckPerms/wiki/Usage>",
+        "errors": "This page contains common errors of Storage-Systems.\nYours might be listed there too.\n<https://github.com/lucko/LuckPerms/wiki/Storage-system-errors>",
+        "editor": "LuckPerms offers a easy to use, powerful Web editor, to add, delete and change permissions of groups and playets.\nMore info can be found here:\n<https://github.com/lucko/LuckPerms/wiki/Web-Editor>",
+        "verbose": "LuckPerms provides a verbose-command, to find out, what command/function uses what permission.\nMore info can be found here:\n<https://github.com/lucko/LuckPerms/wiki/Verbose>",
+        "meta": "You can set prefixes, suffixes and other meta in LuckPerms for players and groups.\nNote that LuckPerms does **not** manage chat. You need to use another plugin to show prefixes/suffixes in chat!\n<https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta>",
+        "context": "You can set a permission or apply a group on a per-world/per-server basis, through so called \"contexts\".\nMore info can be found here:\n<https://github.com/lucko/LuckPerms/wiki/Context>",
+        "default": "LuckPerms already provides a group, that every player gets on join.\nThis group is called `default`.\nYou can use multiple methods to change, what group is the default one, or how the default one is presented.\n<https://github.com/lucko/LuckPerms/wiki/Default-Groups>"
     }
 }
