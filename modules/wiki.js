@@ -8,6 +8,9 @@ module.exports = function (client) {
         
         // Check if command is in the data file. If so, send it
         var wiki_link = data.wiki_links[msg.content.toLowerCase().substring(1)];
-        if (wiki_link) await msg.channel.send(`:bookmark: Wiki: \`` + msg.content.toLowerCase().substring(1) + `\`\n${wiki_link}`)
+        if (wiki_link) {
+            var trigger = msg.content.toLowerCase().substring(1).split(" ")[0].replace(/[^0-9a-z]/gi, '')
+            await msg.channel.send(`:bookmark: Wiki: \`` + trigger + `\`\n${wiki_link}`)
+        }
     })
 }
