@@ -25,7 +25,7 @@ module.exports = function (client) {
             });
 
             embed
-                .setColor('#00FF00')
+                .setColor('#94df03')
                 .setTitle(`Available commands:`)
                 .setDescription(list);
         } else {
@@ -37,8 +37,8 @@ module.exports = function (client) {
             if (!item) return;
 
             embed
-                .setColor('#00FF00')
-                .setTitle(`:bookmark: ${item.title}`)
+                .setColor('#94df03')
+                .setTitle(`🔖 ${item.title}`)
                 .setURL(item.url)
                 .setDescription(item.description)
                 .addField('Read more:', item.url)
