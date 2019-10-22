@@ -139,6 +139,12 @@
                     "value": "https://github.com/lucko/LuckPerms/wiki/Developer-API:-Usage"
                 }
             ]
+        },
+        {
+            "command": "placeholders",
+            "title": "Placeholders",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Placeholders",
+            "description": "Display data such as user prefixes and groups from LuckPerms in other plugins."
         }
     ]
 }
