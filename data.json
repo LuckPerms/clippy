@@ -150,7 +150,7 @@
 	    "command": "permissions",
 	    "title": "Permissions",
 	    "url": "https://github.com/lucko/LuckPerms/wiki/Permissions",
-	    "description": "A list of permissions used by LuckPerms commands.",
+	    "description": "A list of permissions used by LuckPerms commands."
 	}
     ]
 }
