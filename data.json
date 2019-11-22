@@ -156,7 +156,7 @@
             "command": "downloads",
             "title": "Downloads",
             "url": "https://luckperms.net",
-            "description": "You cab download LuckPerms for Spigot/Paper, BungeeCord, Sponge, Nukkit or Velocity.",
+            "description": "You can download LuckPerms for Spigot/Paper, BungeeCord, Sponge, Nukkit or Velocity.",
             "fields": [
                 {
                     "key": "Additional downloads",
