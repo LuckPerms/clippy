@@ -99,7 +99,7 @@
             "description": "Quickly update a large amount of user and group permissions by using the `bulkupdate` command."
         },
         {
-            "command": "switchingstorage",
+            "command": "switchstorage",
             "title": "Switching storage types",
             "url": "https://github.com/lucko/LuckPerms/wiki/Switching-storage-types",
             "description": "If you wish to change your storage type (e.g. to YAML or MySQL) you may need to follow these instructions to ensure your groups and permissions are migrated to the new storage type."
@@ -146,11 +146,23 @@
             "url": "https://github.com/lucko/LuckPerms/wiki/Placeholders",
             "description": "Display data such as user prefixes and groups from LuckPerms in other plugins."
         },
-	{
-	    "command": "permissions",
-	    "title": "Permissions",
-	    "url": "https://github.com/lucko/LuckPerms/wiki/Permissions",
-	    "description": "A list of permissions used by LuckPerms commands."
-	}
+	    {
+            "command": "permissions",
+            "title": "Permissions",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Permissions",
+            "description": "A list of permissions used by LuckPerms commands."
+        },
+        {
+            "command": "downloads",
+            "title": "Downloads",
+            "url": "https://luckperms.net",
+            "description": "You cab download LuckPerms for Spigot/Paper, BungeeCord, Sponge, Nukkit or Velocity.",
+            "fields": [
+                {
+                    "key": "Additional downloads",
+                    "value": "https://ci.lucko.me/view/LuckPerms/"
+                }
+            ]
+        }
     ]
 }
