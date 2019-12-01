@@ -146,7 +146,7 @@
             "url": "https://github.com/lucko/LuckPerms/wiki/Placeholders",
             "description": "Display data such as user prefixes and groups from LuckPerms in other plugins."
         },
-	    {
+        {
             "command": "permissions",
             "title": "Permissions",
             "url": "https://github.com/lucko/LuckPerms/wiki/Permissions",
