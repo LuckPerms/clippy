@@ -166,7 +166,7 @@
         },
         {
             "command": "paste",
-            "title": "PasteBin",
+            "title": "Hastebin",
             "url": "https://pastebin.com/",
             "description": "We don't like seeing chat flooded with error codes... Paste your error codes or configuration files in here and share the link!",
         }
