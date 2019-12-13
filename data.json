@@ -167,7 +167,7 @@
         {
             "command": "paste",
             "title": "Hastebin",
-            "url": "https://pastebin.com/",
+            "url": "https://hasteb.in/",
             "description": "Hastebin allows to easily share config files or errors without making a mess.\n**Please make sure to remove passwords, usernames, etc. when sharing config files or similar!**",
             "fields": [
                 {
