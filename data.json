@@ -164,6 +164,7 @@
                 }
             ]
         },
+        {
             "command": "paste",
             "title": "PasteBin",
             "url": "https://pastebin.com/",
