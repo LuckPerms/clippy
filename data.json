@@ -168,7 +168,17 @@
             "command": "paste",
             "title": "Hastebin",
             "url": "https://pastebin.com/",
-            "description": "We don't like seeing chat flooded with error codes... Paste your error codes or configuration files in here and share the link!",
+            "description": "Hastebin allows to easily share config files or errors without making a mess.\n**Please make sure to remove passwords, usernames, etc. when sharing config files or similar!**",
+            "fields": [
+                {
+                    "key": "Pastebin",
+                    "value": "https://pastebin.com/"
+                },
+                {
+                    "key": "Paste.helpch.at",
+                    "value": "https://paste.helpch.at"
+                }
+            ]
         }
     ]
 }
