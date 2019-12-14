@@ -153,6 +153,12 @@
             "description": "A list of permissions used by LuckPerms commands."
         },
         {
+            "command": "locale",
+            "title": "Locale & Translations",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Locale-and-Translations",
+            "description": "Learn how to change all the message from luckperms."            
+        }
+        {
             "command": "downloads",
             "title": "Downloads",
             "url": "https://luckperms.net",
