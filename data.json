@@ -102,7 +102,13 @@
             "command": "switchstorage",
             "title": "Switching storage types",
             "url": "https://github.com/lucko/LuckPerms/wiki/Switching-storage-types",
-            "description": "If you wish to change your storage type (e.g. to YAML or MySQL) you may need to follow these instructions to ensure your groups and permissions are migrated to the new storage type."
+            "description": "If you wish to change your storage type (e.g. to YAML or MySQL) you may need to follow these instructions to ensure your groups and permissions are migrated to the new storage type.",
+            "fields": [
+                {
+                    "key": "Read more about the Storage types",
+                    "value": "https://github.com/lucko/LuckPerms/wiki/Storage-types"
+                }
+            ]
         },
         {
             "command": "stacking",
