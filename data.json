@@ -163,6 +163,12 @@
                     "value": "https://ci.lucko.me/view/LuckPerms/"
                 }
             ]
+        },
+        {
+            "command": "dontask",
+            "title": "Don't ask to ask, just ask",
+            "url": "https://sol.gfxile.net/dontask.html",
+            "description": "Don't ask if you can ask for help, but instead just ask your question straight away.\nIf someone has time to help, they might answer your."
         }
     ]
 }
