@@ -163,6 +163,12 @@
                     "value": "https://ci.lucko.me/view/LuckPerms/"
                 }
             ]
+        },
+        {
+            "command": "cauldron",
+            "title": "Cauldron, Thermos, Forge + Bukkit Hacks",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Installation#cauldron-thermos-etc",
+            "description": "Installing LuckPerms on a Cauldron, Thermos and any other Forge + Bukkit server software may require additional steps."
         }
     ]
 }
