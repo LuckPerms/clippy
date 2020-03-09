@@ -153,6 +153,48 @@
             "description": "A list of permissions used by LuckPerms commands."
         },
         {
+            "command": "locale",
+            "title": "Locale & Translations",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Locale-and-Translations",
+            "description": "Learn how to change all the message from luckperms."            
+        },
+        {
+            "command": "config",
+            "title": "Luckperms Configuration",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Configuration",
+            "description": "Learn what each of the config options are for." 
+        },
+        {
+            "command": "upgrade",
+            "title": "Upgrading from v4 to v5",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Upgrading-from-v4-to-v5",
+            "description": "Read about upgrading luckperms from v4 to v5." 
+        },
+        {
+            "command": "commandequivalents",
+            "title": "Command Equivalents",
+            "url": "https://github.com/lucko/LuckPerms/wiki/GM-&-PEX-Command-Equivalents",
+            "description": "Helpful page for people coming from other permission plugins." 
+        },
+        {
+            "command": "extensions",
+            "title": "Extensions",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Extensions",
+            "description": "A list of all the Luckperms extensions." 
+        },
+        {
+            "command": "selfhosting",
+            "title": "Self Hosting",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Self-hosting-the-web-interfaces",
+            "description": "Learn how to self-host all the web interfaces." 
+        },
+        {
+            "command": "whyluckperms",
+            "title": "Why Luckperms",
+            "url": "https://github.com/lucko/LuckPerms/wiki/Why-LuckPerms",
+            "description": "Why should you choose luckperms? Read here to find out." 
+        },
+        {
             "command": "downloads",
             "title": "Downloads",
             "url": "https://luckperms.net",
