@@ -6,7 +6,7 @@
     ],
     "title": "LuckPerms Wiki",
     "url": "https://github.com/lucko/LuckPerms/wiki",
-    "description": "Learn how to use LuckPerms and all of its features by reading the Luckperms wiki on GitHub.",
+    "description": "Learn how to use LuckPerms and all of its features by reading the wiki on GitHub.",
     "wiki": true
   },
   {
@@ -303,6 +303,9 @@
   },
   {
     "name": "downloads",
+    "aliases": [
+      "download", "update"
+    ],
     "title": "Downloads",
     "url": "https://luckperms.net",
     "description": "You can download LuckPerms for Spigot/Paper, BungeeCord, Sponge, Nukkit or Velocity.",
@@ -323,7 +326,7 @@
   {
     "name": "essentials",
     "aliases": [
-      "moss"
+      "moss", "essx"
     ],
     "title": "Essentials support",
     "description": "Make sure you are using EssentialsX and Vault for prefixes. For any other issues with Essentials, you should seek support in either <#308232296753004556> or the official EssentialsX support Discord, M.O.S.S.",
@@ -334,6 +337,110 @@
       }
     ],
     "message": "https://discord.gg/casfFyh",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "colours",
+    "aliases": [
+      "colors"
+    ],
+    "title": "Colour Codes",
+    "description": "A helpful list of all colour codes that you can use.",
+    "fields": [
+      {
+        "key": "Colours",
+        "value": "https://wiki.ess3.net/mc/"
+      }
+    ],
+    "message": "https://wiki.ess3.net/mc/",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "helpchat",
+    "aliases": [
+      "papi", "deluxechat"
+    ],
+    "title": "Helpchat",
+    "description": "Helpchat is a general plugin assistance discord as well as the home of DeluxeChat, PlaceholderAPI, and many more.",
+    "fields": [
+      {
+        "key": "Helpchat Discord",
+        "value": "https://discord.gg/FtArYRQ"
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "notworking",
+    "aliases": [
+      "nw"
+    ],
+    "title": "Please tell us what's going on!",
+    "description": "We really would absolutely love to help you out! However, telling us that it isn't working wastes everyone's time. Please, just **describe the issue you're having clearly** and with as much detail as possible, and **send any relevant screenshots** of whatever problems you're having.",
+    "fields": [
+      {
+        "key": "For Console Errors:",
+        "value": "https://pastebin.com/"
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "userinfo",
+    "aliases": [
+      "sendinfo"
+    ],
+    "title": "Please take a screenshot!",
+    "description": "Seeing a screenshot makes everything so much easier!",
+    "fields": [
+      {
+        "key": "For prefixes not showing up in chat:",
+        "value": "`/lp user <user> info`."
+      },
+      {
+        "key": "For database errors:",
+        "value": "Server console: `/lp info` | Proxy console: `/lpb info`."
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "pasteit",
+    "aliases": [
+      "paste", "pastebin"
+    ],
+    "title": "Please use pastebin!",
+    "description": "Seeing a paste of the problem makes everything so much easier! Use https://bytebin.lucko.me/ for easy pasting!",
+    "fields": [
+      {
+        "key": "For console errors:",
+        "value": "Pastebin any relevant segments of the console log. If it's a startup error, this includes the entire startup log!"
+      },
+      {
+        "key": "Other errors:",
+        "value": "Pastebin the entire Luckperms config file (passwords removed) as well as any other relevant files!"
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "nowildcard",
+    "aliases": [
+      "nwc"
+    ],
+    "title": "Wildcards are spooky!",
+    "description": "Wildcards are usually not the best idea, and they can lead to a lot of problems. See this excellent explanation as to why wilcards are probably not the way to go when giving permissions.",
+    "fields": [
+      {
+        "key": "Click here:",
+        "value": "https://nucleuspowered.org/docs/nowildcard.html"
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
     "sendMessageAfterEmbed": true
   }
 ]
