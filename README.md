@@ -28,7 +28,7 @@ Make sure to follow the syntax:
 ]
 ```  
 The option `wiki` is used together with the `url` field to add a separate embed field with the title `Read more:` and the URL as value.  
-Additionally can you set your own embed fields using the following synax (This would be on the same level as `name`)  
+Additionally can you set your own embed fields using the following synax (`fields` would be on the same level as `name`)  
 ```json
 [
   {
