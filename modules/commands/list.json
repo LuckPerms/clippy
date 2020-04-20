@@ -1,0 +1,446 @@
+[
+  {
+    "name": "wiki",
+    "aliases": [
+      "docs"
+    ],
+    "title": "LuckPerms Wiki",
+    "url": "https://github.com/lucko/LuckPerms/wiki",
+    "description": "Learn how to use LuckPerms and all of its features by reading the wiki on GitHub.",
+    "wiki": true
+  },
+  {
+    "name": "install",
+    "title": "Installing LuckPerms",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Installation",
+    "description": "You can install LuckPerms on Spigot/Paper, Sponge, BungeeCord/Waterfall, Velocity and others. Check the installation guide for more info on setting up LuckPerms.",
+    "wiki": true
+  },
+  {
+    "name": "bungee",
+    "aliases": [
+      "bungeecord",
+      "network"
+    ],
+    "title": "Network Installation",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Network-Installation",
+    "description": "If you run a Bungeecord network, learn how to correctly setup LuckPerms on all server instances (including Bungee).",
+    "fields": [
+      {
+        "key": "Also read:",
+        "value": "Syncing data between servers\n\nhttps://github.com/lucko/LuckPerms/wiki/Syncing-data-between-servers"
+      }
+    ],
+    "wiki": true
+  },
+  {
+    "name": "sync",
+    "title": "Syncing data between servers",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Syncing-data-between-servers",
+    "description": "To sync data between servers, you need to connect each LuckPerms plugin to the same database (for example MySQL) and set up a messaging service.",
+    "wiki": true
+  },
+  {
+    "name": "usage",
+    "title": "Usage",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Usage",
+    "description": "Here's a guide to help users understand and use LuckPerms for the first time.",
+    "wiki": true
+  },
+  {
+    "name": "errors",
+    "title": "Storage system errors",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors",
+    "description": "Here's a page with some common storage system errors.",
+    "wiki": true
+  },
+  {
+    "name": "editor",
+    "title": "Web Editor",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Web-Editor",
+    "description": "LuckPerms offers an easy to use, powerful Web Editor, with which you can add, delete and change permissions of groups and players.",
+    "wiki": true
+  },
+  {
+    "name": "verbose",
+    "title": "Verbose",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Verbose",
+    "description": "LuckPerms provides a `verbose` command to help you find out what permissions a command/plugin is checking.",
+    "wiki": true
+  },
+  {
+    "name": "meta",
+    "aliases": [
+      "prefix",
+      "prefixes",
+      "suffix",
+      "suffixes"
+    ],
+    "title": "Prefixes, Suffixes & Meta",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta",
+    "description": "You can set prefixes, suffixes and other meta data in LuckPerms for players and groups. Note that LuckPerms does **not** manage chat. You need to use another plugin to show prefixes/suffixes in chat.",
+    "wiki": true
+  },
+  {
+    "name": "context",
+    "title": "Context",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Context",
+    "description": "You can set a permission or group on a per-world/per-server basis, through what we call \"contexts\".",
+    "wiki": true
+  },
+  {
+    "name": "default",
+    "title": "Default Groups",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Default-Groups",
+    "description": "LuckPerms provides a group that every player is added to upon joining the server, called `default`. You can use multiple methods to change the default group or change the name of it.",
+    "wiki": true
+  },
+  {
+    "name": "storage",
+    "title": "Storage types",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Storage-types",
+    "description": "LuckPerms allows you to store data in a variety of storage types, read about the benefits and drawbacks of each type on the wiki.",
+    "wiki": true
+  },
+  {
+    "name": "commands",
+    "title": "Command Usage",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Command-Usage",
+    "description": "Find all of the available LuckPerms commands on the wiki.",
+    "fields": [
+      {
+        "key": "General commands",
+        "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-General)",
+        "inline": true
+      },
+      {
+        "key": "User commands",
+        "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-User)",
+        "inline": true
+      },
+      {
+        "key": "Group commands",
+        "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-Group)",
+        "inline": true
+      },
+      {
+        "key": "Permission commands",
+        "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-Permission)",
+        "inline": true
+      },
+      {
+        "key": "Parent commands",
+        "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-Parent)",
+        "inline": true
+      },
+      {
+        "key": "Meta commands",
+        "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-Meta)",
+        "inline": true
+      },
+      {
+        "key": "Track commands",
+        "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-Track)",
+        "inline": true
+      },
+      {
+        "key": "Log commands",
+        "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-Log)",
+        "inline": true
+      }
+    ],
+    "wiki": true
+  },
+  {
+    "name": "faq",
+    "title": "FAQ",
+    "url": "https://github.com/lucko/LuckPerms/wiki/FAQ",
+    "description": "Check out some of our frequently asked questions.",
+    "wiki": true
+  },
+  {
+    "name": "migration",
+    "title": "Migration",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Migration",
+    "description": "Learn about the process of migrating from another permission plugin.",
+    "wiki": true
+  },
+  {
+    "name": "bulkupdate",
+    "aliases": [
+      "bulk",
+      "bulkupdating",
+      "bulkedit",
+      "bulkediting"
+    ],
+    "title": "Bulk Editing",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Bulk-Editing",
+    "description": "Quickly update a large amount of user and group permissions by using the `bulkupdate` command.",
+    "wiki": true
+  },
+  {
+    "name": "switchstorage",
+    "aliases": [
+      "switchstorage"
+    ],
+    "title": "Switching storage types",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Switching-storage-types",
+    "description": "If you wish to change your storage type (e.g. to YAML or MySQL) you may need to follow these instructions to ensure your groups and permissions are migrated to the new storage type.",
+    "fields": [
+      {
+        "key": "Read more about the Storage types",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Storage-types"
+      }
+    ],
+    "wiki": true
+  },
+  {
+    "name": "stacking",
+    "title": "Prefix & Suffix Stacking",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Prefix-&-Suffix-Stacking",
+    "description": "Display multiple prefixes/suffixes alongside a player's name.",
+    "wiki": true
+  },
+  {
+    "name": "tracks",
+    "title": "Tracks",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Tracks",
+    "description": "Tracks provide a method for you to promote/demote players along a track (or ladder) of groups.",
+    "wiki": true
+  },
+  {
+    "name": "advanced",
+    "title": "Advanced Setup",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Advanced-Setup",
+    "description": "Discover some of the more advanced concepts of LuckPerms, such as permission calculation, shorthand permissions and more.",
+    "wiki": true
+  },
+  {
+    "name": "argumentbased",
+    "title": "Argument based command permissions",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Argument-based-command-permissions",
+    "description": "Fine tune exactly what users with permission to use LuckPerms can do.",
+    "wiki": true
+  },
+  {
+    "name": "api",
+    "title": "Developer API",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Developer-API",
+    "description": "Learn how to use the LuckPerms API in your project.",
+    "fields": [
+      {
+        "key": "Example usages",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Developer-API:-Usage"
+      }
+    ],
+    "wiki": true
+  },
+  {
+    "name": "placeholders",
+    "title": "Placeholders",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Placeholders",
+    "description": "Display data such as user prefixes and groups from LuckPerms in other plugins.",
+    "wiki": true
+  },
+  {
+    "name": "permissions",
+    "title": "Permissions",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Permissions",
+    "description": "A list of permissions used by LuckPerms commands.",
+    "wiki": true
+  },
+  {
+    "name": "locale",
+    "title": "Locale & Translations",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Locale-and-Translations",
+    "description": "Learn how to change all the message from luckperms.",
+    "wiki": true
+  },
+  {
+    "name": "config",
+    "title": "Luckperms Configuration",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Configuration",
+    "description": "Learn what each of the config options are for.",
+    "wiki": true
+  },
+  {
+    "name": "upgrade",
+    "title": "Upgrading from v4 to v5",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Upgrading-from-v4-to-v5",
+    "description": "Read about upgrading luckperms from v4 to v5.",
+    "wiki": true
+  },
+  {
+    "name": "commandequivalents",
+    "aliases": [
+      "equivalents"
+    ],
+    "title": "Command Equivalents",
+    "url": "https://github.com/lucko/LuckPerms/wiki/GM-&-PEX-Command-Equivalents",
+    "description": "Helpful page for people coming from other permission plugins.",
+    "wiki": true
+  },
+  {
+    "name": "extensions",
+    "title": "Extensions",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Extensions",
+    "description": "A list of all the Luckperms extensions.",
+    "wiki": true
+  },
+  {
+    "name": "selfhosting",
+    "title": "Self Hosting",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Self-hosting-the-web-interfaces",
+    "description": "Learn how to self-host all the web interfaces.",
+    "wiki": true
+  },
+  {
+    "name": "whyluckperms",
+    "title": "Why Luckperms",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Why-LuckPerms",
+    "description": "Why should you choose LuckPerms? Read here to find out.",
+    "wiki": true
+  },
+  {
+    "name": "downloads",
+    "aliases": [
+      "download", "update"
+    ],
+    "title": "Downloads",
+    "url": "https://luckperms.net",
+    "description": "You can download LuckPerms for Spigot/Paper, BungeeCord, Sponge, Nukkit or Velocity.",
+    "fields": [
+      {
+        "key": "Additional downloads",
+        "value": "https://ci.lucko.me/view/LuckPerms/"
+      }
+    ]
+  },
+  {
+    "name": "cauldron",
+    "title": "Cauldron, Thermos, Forge + Bukkit Hacks",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Installation#cauldron-thermos-etc",
+    "description": "Installing LuckPerms on a Cauldron, Thermos and any other Forge + Bukkit server software may require additional steps.",
+    "wiki": true
+  },
+  {
+    "name": "essentials",
+    "aliases": [
+      "moss", "essx"
+    ],
+    "title": "Essentials support",
+    "description": "Make sure you are using EssentialsX and Vault for prefixes. For any other issues with Essentials, you should seek support in either <#308232296753004556> or the official EssentialsX support Discord, M.O.S.S.",
+    "fields": [
+      {
+        "key": "M.O.S.S. Discord",
+        "value": "https://discord.gg/casfFyh"
+      }
+    ],
+    "message": "https://discord.gg/casfFyh",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "colours",
+    "aliases": [
+      "colors"
+    ],
+    "title": "Colour Codes",
+    "description": "A helpful list of all colour codes that you can use.",
+    "fields": [
+      {
+        "key": "Colours",
+        "value": "https://wiki.ess3.net/mc/"
+      }
+    ],
+    "message": "https://wiki.ess3.net/mc/",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "helpchat",
+    "aliases": [
+      "papi", "deluxechat"
+    ],
+    "title": "Helpchat",
+    "description": "Helpchat is a general plugin assistance discord as well as the home of DeluxeChat, PlaceholderAPI, and many more.",
+    "fields": [
+      {
+        "key": "Helpchat Discord",
+        "value": "https://discord.gg/FtArYRQ"
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "notworking",
+    "aliases": [
+      "nw"
+    ],
+    "title": "Please tell us what's going on!",
+    "description": "We really would absolutely love to help you out! However, telling us that it isn't working wastes everyone's time. Please, just **describe the issue you're having clearly** and with as much detail as possible, and **send any relevant screenshots** of whatever problems you're having.",
+    "fields": [
+      {
+        "key": "For Console Errors:",
+        "value": "https://pastebin.com/"
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "userinfo",
+    "aliases": [
+      "sendinfo"
+    ],
+    "title": "Please take a screenshot!",
+    "description": "Seeing a screenshot makes everything so much easier!",
+    "fields": [
+      {
+        "key": "For prefixes not showing up in chat:",
+        "value": "`/lp user <user> info`."
+      },
+      {
+        "key": "For database errors:",
+        "value": "Server console: `/lp info` | Proxy console: `/lpb info`."
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "pasteit",
+    "aliases": [
+      "paste", "pastebin"
+    ],
+    "title": "Please use pastebin!",
+    "description": "Seeing a paste of the problem makes everything so much easier! Use https://bytebin.lucko.me/ for easy pasting!",
+    "fields": [
+      {
+        "key": "For console errors:",
+        "value": "Pastebin any relevant segments of the console log. If it's a startup error, this includes the entire startup log!"
+      },
+      {
+        "key": "Other errors:",
+        "value": "Pastebin the entire Luckperms config file (passwords removed) as well as any other relevant files!"
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "nowildcard",
+    "aliases": [
+      "nwc"
+    ],
+    "title": "Wildcards are spooky!",
+    "description": "Wildcards are usually not the best idea, and they can lead to a lot of problems. See this excellent explanation as to why wilcards are probably not the way to go when giving permissions.",
+    "fields": [
+      {
+        "key": "Click here:",
+        "value": "https://nucleuspowered.org/docs/nowildcard.html"
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  }
+]
