@@ -304,15 +304,22 @@
   {
     "name": "downloads",
     "aliases": [
-      "download", "update"
+      "download",
+      "update"
     ],
     "title": "Downloads",
     "url": "https://luckperms.net",
     "description": "You can download LuckPerms for Spigot/Paper, BungeeCord, Sponge, Nukkit or Velocity.",
     "fields": [
       {
-        "key": "Additional downloads",
-        "value": "https://ci.lucko.me/view/LuckPerms/"
+        "key": "Other LuckPerms Downloads",
+        "value": "https://ci.lucko.me/view/LuckPerms/job/LuckPerms/",
+        "inline": false
+      },
+      {
+        "key": "Extension Downloads",
+        "value": "[Default Assignments](https://ci.lucko.me/view/LuckPerms/job/extension-default-assignments/)\n[Legacy API](https://ci.lucko.me/view/LuckPerms/job/extension-legacy-api/)",
+        "inline": false
       }
     ]
   },
