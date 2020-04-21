@@ -42,6 +42,9 @@
   },
   {
     "name": "usage",
+    "aliases": [
+      "guide", "starting"
+    ],
     "title": "Usage",
     "url": "https://github.com/lucko/LuckPerms/wiki/Usage",
     "description": "Here's a guide to help users understand and use LuckPerms for the first time.",
@@ -49,6 +52,9 @@
   },
   {
     "name": "errors",
+    "aliases": [
+      "error", "storageerror"
+    ],
     "title": "Storage system errors",
     "url": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors",
     "description": "Here's a page with some common storage system errors.",
@@ -56,6 +62,9 @@
   },
   {
     "name": "editor",
+    "aliases": [
+      "webeditor"
+    ],
     "title": "Web Editor",
     "url": "https://github.com/lucko/LuckPerms/wiki/Web-Editor",
     "description": "LuckPerms offers an easy to use, powerful Web Editor, with which you can add, delete and change permissions of groups and players.",
@@ -83,6 +92,9 @@
   },
   {
     "name": "context",
+    "aliases": [
+      "contexts"
+    ],
     "title": "Context",
     "url": "https://github.com/lucko/LuckPerms/wiki/Context",
     "description": "You can set a permission or group on a per-world/per-server basis, through what we call \"contexts\".",
@@ -97,6 +109,9 @@
   },
   {
     "name": "storage",
+    "aliases": [
+      "storagetypes", "filetypes"
+    ],
     "title": "Storage types",
     "url": "https://github.com/lucko/LuckPerms/wiki/Storage-types",
     "description": "LuckPerms allows you to store data in a variety of storage types, read about the benefits and drawbacks of each type on the wiki.",
@@ -104,6 +119,9 @@
   },
   {
     "name": "commands",
+    "aliases": [
+      "command"
+    ],
     "title": "Command Usage",
     "url": "https://github.com/lucko/LuckPerms/wiki/Command-Usage",
     "description": "Find all of the available LuckPerms commands on the wiki.",
@@ -147,6 +165,11 @@
         "key": "Log commands",
         "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-Log)",
         "inline": true
+      },
+      {
+        "key": "-",
+        "value": "-",
+        "inline": true
       }
     ],
     "wiki": true
@@ -181,7 +204,7 @@
   {
     "name": "switchstorage",
     "aliases": [
-      "switchstorage"
+      "switch"
     ],
     "title": "Switching storage types",
     "url": "https://github.com/lucko/LuckPerms/wiki/Switching-storage-types",
@@ -422,6 +445,26 @@
       {
         "key": "Other errors:",
         "value": "Pastebin the entire Luckperms config file (passwords removed) as well as any other relevant files!"
+      }
+    ],
+    "message": "https://discord.gg/FtArYRQ",
+    "sendMessageAfterEmbed": true
+  },
+  {
+    "name": "ask",
+    "aliases": [
+      "pleaseask", "justask"
+    ],
+    "title": "Please ask your question!",
+    "description": "Please ask the question you have. Don't ask to ask, or ask to DM someone. There are people here to help you, but we need to know what to help you with, so please just ask the question you want to in as much detail as possible!",
+    "fields": [
+      {
+        "key": "Or, try here first:",
+        "value": "https://github.com/lucko/LuckPerms/wiki"
+      },
+      {
+        "key": "Why shouldn't I ask to ask?",
+        "value": "https://sol.gfxile.net/dontask.html"
       }
     ],
     "message": "https://discord.gg/FtArYRQ",
