@@ -204,7 +204,7 @@
   {
     "name": "switchstorage",
     "aliases": [
-      "switch"
+      "switch", "switchingstorage"
     ],
     "title": "Switching storage types",
     "url": "https://github.com/lucko/LuckPerms/wiki/Switching-storage-types",
