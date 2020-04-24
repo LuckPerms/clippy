@@ -6,6 +6,7 @@ module.exports = function (client) {
         {regex: /https?:\/\/paste\.helpch\.at\/(\w+)/g, getLink: 'https://paste.helpch.at/raw/{code}'},
         {regex: /https?:\/\/bytebin\.lucko\.me\/(\w+)/g, getLink: 'https://bytebin.lucko.me/{code}'},]
     client.on('message', async message => {
+        if (message.channel.type !== 'text' || message.user.bot) return;
         let getLink;
         let originalLink;
         pastebins.forEach(pastebin => {
