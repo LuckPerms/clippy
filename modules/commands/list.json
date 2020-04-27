@@ -375,8 +375,8 @@
         "value": "https://wiki.ess3.net/mc/"
       }
     ],
-    "message": "https://wiki.ess3.net/mc/",
-    "sendMessageAfterEmbed": true
+    "message": "Placeholder Message for Later",
+    "sendMessageAfterEmbed": false
   },
   {
     "name": "helpchat",
@@ -391,8 +391,8 @@
         "value": "https://discord.gg/FtArYRQ"
       }
     ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    "message": "Placeholder Message for Later",
+    "sendMessageAfterEmbed": false
   },
   {
     "name": "notworking",
@@ -404,11 +404,27 @@
     "fields": [
       {
         "key": "For Console Errors:",
-        "value": "https://pastebin.com/"
+        "value": "https://bytebin.lucko.me/"
       }
     ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    "message": "Placeholder Message for Later",
+    "sendMessageAfterEmbed": false
+  },
+  {
+    "name": "suggestions",
+    "aliases": [
+      "suggest", "bugreport"
+    ],
+    "title": "Suggestions and Bug Reports",
+    "description": "If you would like to request a feature for Luckperms, or report a bug, feel free to open an issue on the GitHub!",
+    "fields": [
+      {
+        "key": "The GitHub:",
+        "value": "https://github.com/lucko/LuckPerms/issues/"
+      }
+    ],
+    "message": "Placeholder Message for Later",
+    "sendMessageAfterEmbed": false
   },
   {
     "name": "userinfo",
@@ -427,8 +443,8 @@
         "value": "Server console: `/lp info` | Proxy console: `/lpb info`."
       }
     ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    "message": "Placeholder Message for Later",
+    "sendMessageAfterEmbed": false
   },
   {
     "name": "pasteit",
@@ -447,8 +463,8 @@
         "value": "Pastebin the entire Luckperms config file (passwords removed) as well as any other relevant files!"
       }
     ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    "message": "Placeholder Message for Later",
+    "sendMessageAfterEmbed": false
   },
   {
     "name": "ask",
@@ -467,9 +483,30 @@
         "value": "https://sol.gfxile.net/dontask.html"
       }
     ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    "message": "Placeholder Message for Later",
+    "sendMessageAfterEmbed": false
   },
+  {
+    "name": "chat",
+    "aliases": [
+      "formatting"
+    ],
+    "title": "Luckperms does not display things in chat!",
+    "description": "Luckperms is only able to send information to formatting plugins so that they display them properly. Luckperms does not put the prefix in front of your name, you need a chat formatting plugin to do it, and you need Vault. Same goes for the tablist! If the information appears correctly when you run `lp user <you> meta info`, Luckperms is doing its job!",
+    "fields": [
+      {
+        "key": "Prefix isn't showing?",
+        "value": "https://github.com/lucko/LuckPerms/wiki/FAQ#why-are-prefixessuffixes-not-working"
+      },
+      {
+        "key": "What plugins can I use to format chat?",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta#displaying-prefixes-and-suffixes"
+      }
+    ],
+    "message": "Placeholder Message for Later",
+    "sendMessageAfterEmbed": false
+  },
+  {
   {
     "name": "nowildcard",
     "aliases": [
@@ -483,7 +520,7 @@
         "value": "https://nucleuspowered.org/docs/nowildcard.html"
       }
     ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    "message": "Placeholder Message for Later",
+    "sendMessageAfterEmbed": false
   }
 ]
