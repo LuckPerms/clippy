@@ -351,11 +351,11 @@
     "aliases": [
       "moss", "essx"
     ],
-    "title": "MOSS",
-    "description": "Make sure you are using EssentialsX and Vault for prefixes. For any other issues with Essentials, or any other M.O.S.S. Projects you should seek support in either <#308232296753004556> or the official EssentialsX support Discord, M.O.S.S.",
+    "title": "Essentials",
+    "description": "Make sure you are using EssentialsX and Vault for prefixes. For any other issues with Essentials, you should seek support in either <#308232296753004556> or the official EssentialsX support Discord.",
     "fields": [
       {
-        "key": "M.O.S.S. Discord",
+        "key": "EssentialsX Discord",
         "value": "https://discord.gg/casfFyh"
       }
     ],
@@ -450,7 +450,7 @@
       },
       {
         "key": "Other errors:",
-        "value": "Pastebin the entire Luckperms config file (passwords removed) as well as any other relevant files!"
+        "value": "Pastebin the entire LuckPerms config file (passwords removed) as well as any other relevant files!"
       }
     ]
   },
