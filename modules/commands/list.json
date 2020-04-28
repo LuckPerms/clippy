@@ -374,9 +374,7 @@
         "key": "Colours",
         "value": "https://wiki.ess3.net/mc/"
       }
-    ],
-    "message": "Placeholder Message for Later",
-    "sendMessageAfterEmbed": false
+    ]
   },
   {
     "name": "helpchat",
@@ -390,9 +388,7 @@
         "key": "Helpchat Discord",
         "value": "https://discord.gg/FtArYRQ"
       }
-    ],
-    "message": "Placeholder Message for Later",
-    "sendMessageAfterEmbed": false
+    ]
   },
   {
     "name": "notworking",
@@ -406,9 +402,7 @@
         "key": "For Console Errors:",
         "value": "https://bytebin.lucko.me/"
       }
-    ],
-    "message": "Placeholder Message for Later",
-    "sendMessageAfterEmbed": false
+    ]
   },
   {
     "name": "suggestions",
@@ -416,15 +410,13 @@
       "suggest", "bugreport"
     ],
     "title": "Suggestions and Bug Reports",
-    "description": "If you would like to request a feature for LuckPerms, or report a bug, feel free to open an issue on the GitHub!",
+    "description": "If you would like to request a feature for LuckPerms, or report a bug, feel free to open an issue on GitHub!",
     "fields": [
       {
-        "key": "The GitHub:",
+        "key": "Issue Tracker:",
         "value": "https://github.com/lucko/LuckPerms/issues/"
       }
-    ],
-    "message": "Placeholder Message for Later",
-    "sendMessageAfterEmbed": false
+    ]
   },
   {
     "name": "userinfo",
@@ -442,9 +434,7 @@
         "key": "For database errors:",
         "value": "Server console: `/lp info` | Proxy console: `/lpb info`."
       }
-    ],
-    "message": "Placeholder Message for Later",
-    "sendMessageAfterEmbed": false
+    ]
   },
   {
     "name": "pasteit",
@@ -462,9 +452,7 @@
         "key": "Other errors:",
         "value": "Pastebin the entire Luckperms config file (passwords removed) as well as any other relevant files!"
       }
-    ],
-    "message": "Placeholder Message for Later",
-    "sendMessageAfterEmbed": false
+    ]
   },
   {
     "name": "ask",
@@ -482,9 +470,7 @@
         "key": "Why shouldn't I ask to ask?",
         "value": "https://sol.gfxile.net/dontask.html"
       }
-    ],
-    "message": "Placeholder Message for Later",
-    "sendMessageAfterEmbed": false
+    ]
   },
   {
     "name": "chat",
@@ -502,25 +488,20 @@
         "key": "What plugins can I use to format chat?",
         "value": "https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta#displaying-prefixes-and-suffixes"
       }
-    ],
-    "message": "Placeholder Message for Later",
-    "sendMessageAfterEmbed": false
+    ]
   },
-  {
   {
     "name": "nowildcard",
     "aliases": [
       "nwc"
     ],
-    "title": "Wildcards are spooky!",
-    "description": "Wildcards are usually not the best idea, and they can lead to a lot of problems. See this excellent explanation as to why wilcards are probably not the way to go when giving permissions.",
+    "title": "Wildcard issues",
+    "description": "Some plugins are created in a way which results in odd behaviour when the root '*' wildcard is used.",
     "fields": [
       {
-        "key": "Click here:",
+        "key": "More information:",
         "value": "https://nucleuspowered.org/docs/nowildcard.html"
       }
-    ],
-    "message": "Placeholder Message for Later",
-    "sendMessageAfterEmbed": false
+    ]
   }
 ]
