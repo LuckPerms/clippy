@@ -42,6 +42,9 @@
   },
   {
     "name": "usage",
+    "aliases": [
+      "guide", "starting"
+    ],
     "title": "Usage",
     "url": "https://github.com/lucko/LuckPerms/wiki/Usage",
     "description": "Here's a guide to help users understand and use LuckPerms for the first time.",
@@ -49,6 +52,9 @@
   },
   {
     "name": "errors",
+    "aliases": [
+      "error", "storageerror"
+    ],
     "title": "Storage system errors",
     "url": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors",
     "description": "Here's a page with some common storage system errors.",
@@ -56,6 +62,9 @@
   },
   {
     "name": "editor",
+    "aliases": [
+      "webeditor"
+    ],
     "title": "Web Editor",
     "url": "https://github.com/lucko/LuckPerms/wiki/Web-Editor",
     "description": "LuckPerms offers an easy to use, powerful Web Editor, with which you can add, delete and change permissions of groups and players.",
@@ -83,6 +92,9 @@
   },
   {
     "name": "context",
+    "aliases": [
+      "contexts"
+    ],
     "title": "Context",
     "url": "https://github.com/lucko/LuckPerms/wiki/Context",
     "description": "You can set a permission or group on a per-world/per-server basis, through what we call \"contexts\".",
@@ -97,6 +109,9 @@
   },
   {
     "name": "storage",
+    "aliases": [
+      "storagetypes", "filetypes"
+    ],
     "title": "Storage types",
     "url": "https://github.com/lucko/LuckPerms/wiki/Storage-types",
     "description": "LuckPerms allows you to store data in a variety of storage types, read about the benefits and drawbacks of each type on the wiki.",
@@ -104,6 +119,9 @@
   },
   {
     "name": "commands",
+    "aliases": [
+      "command"
+    ],
     "title": "Command Usage",
     "url": "https://github.com/lucko/LuckPerms/wiki/Command-Usage",
     "description": "Find all of the available LuckPerms commands on the wiki.",
@@ -147,6 +165,11 @@
         "key": "Log commands",
         "value": "[Link](https://github.com/lucko/LuckPerms/wiki/Command-Usage:-Log)",
         "inline": true
+      },
+      {
+        "key": "-",
+        "value": "-",
+        "inline": true
       }
     ],
     "wiki": true
@@ -181,7 +204,7 @@
   {
     "name": "switchstorage",
     "aliases": [
-      "switchstorage"
+      "switch", "switchingstorage"
     ],
     "title": "Switching storage types",
     "url": "https://github.com/lucko/LuckPerms/wiki/Switching-storage-types",
@@ -253,12 +276,12 @@
     "name": "locale",
     "title": "Locale & Translations",
     "url": "https://github.com/lucko/LuckPerms/wiki/Locale-and-Translations",
-    "description": "Learn how to change all the message from luckperms.",
+    "description": "Learn how to change all the message from LuckPerms.",
     "wiki": true
   },
   {
     "name": "config",
-    "title": "Luckperms Configuration",
+    "title": "LuckPerms Configuration",
     "url": "https://github.com/lucko/LuckPerms/wiki/Configuration",
     "description": "Learn what each of the config options are for.",
     "wiki": true
@@ -267,7 +290,7 @@
     "name": "upgrade",
     "title": "Upgrading from v4 to v5",
     "url": "https://github.com/lucko/LuckPerms/wiki/Upgrading-from-v4-to-v5",
-    "description": "Read about upgrading luckperms from v4 to v5.",
+    "description": "Read about upgrading LuckPerms from v4 to v5.",
     "wiki": true
   },
   {
@@ -296,7 +319,7 @@
   },
   {
     "name": "whyluckperms",
-    "title": "Why Luckperms",
+    "title": "Why LuckPerms",
     "url": "https://github.com/lucko/LuckPerms/wiki/Why-LuckPerms",
     "description": "Why should you choose LuckPerms? Read here to find out.",
     "wiki": true
@@ -328,11 +351,11 @@
     "aliases": [
       "moss", "essx"
     ],
-    "title": "Essentials support",
-    "description": "Make sure you are using EssentialsX and Vault for prefixes. For any other issues with Essentials, you should seek support in either <#308232296753004556> or the official EssentialsX support Discord, M.O.S.S.",
+    "title": "Essentials",
+    "description": "Make sure you are using EssentialsX and Vault for prefixes. For any other issues with Essentials, you should seek support in either <#308232296753004556> or the official EssentialsX support Discord.",
     "fields": [
       {
-        "key": "M.O.S.S. Discord",
+        "key": "EssentialsX Discord",
         "value": "https://discord.gg/casfFyh"
       }
     ],
@@ -351,9 +374,7 @@
         "key": "Colours",
         "value": "https://wiki.ess3.net/mc/"
       }
-    ],
-    "message": "https://wiki.ess3.net/mc/",
-    "sendMessageAfterEmbed": true
+    ]
   },
   {
     "name": "helpchat",
@@ -367,9 +388,7 @@
         "key": "Helpchat Discord",
         "value": "https://discord.gg/FtArYRQ"
       }
-    ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    ]
   },
   {
     "name": "notworking",
@@ -381,11 +400,23 @@
     "fields": [
       {
         "key": "For Console Errors:",
-        "value": "https://pastebin.com/"
+        "value": "https://bytebin.lucko.me/"
       }
+    ]
+  },
+  {
+    "name": "suggestions",
+    "aliases": [
+      "suggest", "bugreport"
     ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    "title": "Suggestions and Bug Reports",
+    "description": "If you would like to request a feature for LuckPerms, or report a bug, feel free to open an issue on GitHub!",
+    "fields": [
+      {
+        "key": "Issue Tracker:",
+        "value": "https://github.com/lucko/LuckPerms/issues/"
+      }
+    ]
   },
   {
     "name": "userinfo",
@@ -403,9 +434,7 @@
         "key": "For database errors:",
         "value": "Server console: `/lp info` | Proxy console: `/lpb info`."
       }
-    ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    ]
   },
   {
     "name": "pasteit",
@@ -421,26 +450,58 @@
       },
       {
         "key": "Other errors:",
-        "value": "Pastebin the entire Luckperms config file (passwords removed) as well as any other relevant files!"
+        "value": "Pastebin the entire LuckPerms config file (passwords removed) as well as any other relevant files!"
       }
+    ]
+  },
+  {
+    "name": "ask",
+    "aliases": [
+      "pleaseask", "justask"
     ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    "title": "Please ask your question!",
+    "description": "Please ask the question you have. Don't ask to ask, or ask to DM someone. There are people here to help you, but we need to know what to help you with, so please just ask the question you want to in as much detail as possible!",
+    "fields": [
+      {
+        "key": "Or, try here first:",
+        "value": "https://github.com/lucko/LuckPerms/wiki"
+      },
+      {
+        "key": "Why shouldn't I ask to ask?",
+        "value": "https://sol.gfxile.net/dontask.html"
+      }
+    ]
+  },
+  {
+    "name": "chat",
+    "aliases": [
+      "formatting"
+    ],
+    "title": "LuckPerms does not display things in chat!",
+    "description": "LuckPerms is only able to send information to formatting plugins so that they display them properly. LuckPerms does not put the prefix in front of your name, you need a chat formatting plugin to do it, and you need Vault. Same goes for the tablist! If the information appears correctly when you run `lp user <you> meta info`, LuckPerms is doing its job!",
+    "fields": [
+      {
+        "key": "Prefix isn't showing?",
+        "value": "https://github.com/lucko/LuckPerms/wiki/FAQ#why-are-prefixessuffixes-not-working"
+      },
+      {
+        "key": "What plugins can I use to format chat?",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta#displaying-prefixes-and-suffixes"
+      }
+    ]
   },
   {
     "name": "nowildcard",
     "aliases": [
       "nwc"
     ],
-    "title": "Wildcards are spooky!",
-    "description": "Wildcards are usually not the best idea, and they can lead to a lot of problems. See this excellent explanation as to why wilcards are probably not the way to go when giving permissions.",
+    "title": "Wildcard issues",
+    "description": "Some plugins are created in a way which results in odd behaviour when the root '*' wildcard is used.",
     "fields": [
       {
-        "key": "Click here:",
+        "key": "More information:",
         "value": "https://nucleuspowered.org/docs/nowildcard.html"
       }
-    ],
-    "message": "https://discord.gg/FtArYRQ",
-    "sendMessageAfterEmbed": true
+    ]
   }
 ]
