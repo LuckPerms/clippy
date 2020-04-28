@@ -34,8 +34,8 @@ module.exports = function (client) {
       embed
           .setColor('#94df03')
           .setTitle('Available commands:')
-          .addField('-', leftList, true)
-          .addField('-', rightList, true);
+          .addField('\u200E', leftList, true)
+          .addField('\u200E', rightList, true);
 
       await message.channel.send({ embed });
       return;
