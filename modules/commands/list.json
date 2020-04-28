@@ -276,12 +276,12 @@
     "name": "locale",
     "title": "Locale & Translations",
     "url": "https://github.com/lucko/LuckPerms/wiki/Locale-and-Translations",
-    "description": "Learn how to change all the message from luckperms.",
+    "description": "Learn how to change all the message from LuckPerms.",
     "wiki": true
   },
   {
     "name": "config",
-    "title": "Luckperms Configuration",
+    "title": "LuckPerms Configuration",
     "url": "https://github.com/lucko/LuckPerms/wiki/Configuration",
     "description": "Learn what each of the config options are for.",
     "wiki": true
@@ -290,7 +290,7 @@
     "name": "upgrade",
     "title": "Upgrading from v4 to v5",
     "url": "https://github.com/lucko/LuckPerms/wiki/Upgrading-from-v4-to-v5",
-    "description": "Read about upgrading luckperms from v4 to v5.",
+    "description": "Read about upgrading LuckPerms from v4 to v5.",
     "wiki": true
   },
   {
@@ -319,7 +319,7 @@
   },
   {
     "name": "whyluckperms",
-    "title": "Why Luckperms",
+    "title": "Why LuckPerms",
     "url": "https://github.com/lucko/LuckPerms/wiki/Why-LuckPerms",
     "description": "Why should you choose LuckPerms? Read here to find out.",
     "wiki": true
@@ -351,8 +351,8 @@
     "aliases": [
       "moss", "essx"
     ],
-    "title": "Essentials support",
-    "description": "Make sure you are using EssentialsX and Vault for prefixes. For any other issues with Essentials, you should seek support in either <#308232296753004556> or the official EssentialsX support Discord, M.O.S.S.",
+    "title": "MOSS",
+    "description": "Make sure you are using EssentialsX and Vault for prefixes. For any other issues with Essentials, or any other M.O.S.S. Projects you should seek support in either <#308232296753004556> or the official EssentialsX support Discord, M.O.S.S.",
     "fields": [
       {
         "key": "M.O.S.S. Discord",
@@ -416,7 +416,7 @@
       "suggest", "bugreport"
     ],
     "title": "Suggestions and Bug Reports",
-    "description": "If you would like to request a feature for Luckperms, or report a bug, feel free to open an issue on the GitHub!",
+    "description": "If you would like to request a feature for LuckPerms, or report a bug, feel free to open an issue on the GitHub!",
     "fields": [
       {
         "key": "The GitHub:",
@@ -491,8 +491,8 @@
     "aliases": [
       "formatting"
     ],
-    "title": "Luckperms does not display things in chat!",
-    "description": "Luckperms is only able to send information to formatting plugins so that they display them properly. Luckperms does not put the prefix in front of your name, you need a chat formatting plugin to do it, and you need Vault. Same goes for the tablist! If the information appears correctly when you run `lp user <you> meta info`, Luckperms is doing its job!",
+    "title": "LuckPerms does not display things in chat!",
+    "description": "LuckPerms is only able to send information to formatting plugins so that they display them properly. LuckPerms does not put the prefix in front of your name, you need a chat formatting plugin to do it, and you need Vault. Same goes for the tablist! If the information appears correctly when you run `lp user <you> meta info`, LuckPerms is doing its job!",
     "fields": [
       {
         "key": "Prefix isn't showing?",
