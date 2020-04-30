@@ -118,6 +118,16 @@
     "wiki": true
   },
   {
+    "name": "weight",
+    "aliases": [
+      "weights", "priority"
+    ],
+    "title": "Weight",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Weight",
+    "description": "LuckPerms allows you to set weights in order to determine the priority of certain nodes, like permissions and even prefixes. A higher weight number is a higher priority.",
+    "wiki": true
+  },
+  {
     "name": "commands",
     "aliases": [
       "command"
