@@ -235,6 +235,16 @@
     "wiki": true
   },
   {
+    "name": "inheritance",
+    "aliases": [
+      "inherit", "inheriting", "inherits"
+    ],
+    "title": "Inheritance",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Usage#inheritance",
+    "description": "Learn about inheritance.",
+    "wiki": true
+  },
+  {
     "name": "tracks",
     "title": "Tracks",
     "url": "https://github.com/lucko/LuckPerms/wiki/Tracks",
@@ -555,20 +565,6 @@
       {
         "key": "Read me!",
         "value": "https://admincraft.host/"
-      }
-    ]
-  },
-  {
-    "name": "inheritance",
-    "aliases": [
-      "inherits", "inherit"
-    ],
-    "title": "Inheritance",
-    "description": "What is inheritance? Click below to find out!",
-    "fields": [
-      {
-        "key": "Read me!",
-        "value": "https://github.com/lucko/LuckPerms/wiki/Usage#inheritance"
       }
     ]
   },
