@@ -518,40 +518,6 @@
       }
     ]
   },
-  {
-    "name": "ssl",
-    "aliases": [
-      "usessl"
-    ],
-    "title": "The useSSL error!",
-    "description": "The useSSL error appears when you have not added the correct lines in the right place in the configuration. Make sure you do not uncomment the ones already there, but rather add them underneath the `characterEncoding` line.",
-    "fields": [
-      {
-        "key": "Read me!",
-        "value": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-ssl-errors"
-      },
-      {
-        "key": "What is SSL?",
-        "value": "https://www.cloudflare.com/learning/ssl/what-is-ssl/"
-      }
-    ]
-  },
-  {
-    "name": "timeout",
-    "aliases": [
-      "connectiontimeout"
-    ],
-    "title": "The connectionTimeout error!",
-    "description": "The useSSL error appears when you have not added the correct lines in the right place in the configuration. Make sure you do not uncomment the ones already there, but rather add them underneath the `characterEncoding` line.",
-    "fields": [
-      {
-        "key": "Read me!",
-        "value": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-ssl-errors"
-      },
-      {
-        "key": "What is SSL?",
-        "value": "https://www.cloudflare.com/learning/ssl/what-is-ssl/"
-      }
     ]
   },
   {
