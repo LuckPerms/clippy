@@ -120,7 +120,7 @@
   {
     "name": "weight",
     "aliases": [
-      "weights", "weighing"
+      "weights", "priority"
     ],
     "title": "Weight",
     "url": "https://github.com/lucko/LuckPerms/wiki/Weight",
@@ -177,8 +177,8 @@
         "inline": true
       },
       {
-        "key": "-",
-        "value": "‎‎-",
+        "key": "\u200E",
+        "value": "\u200E",
         "inline": true
       }
     ],
@@ -341,7 +341,7 @@
     ],
     "title": "Downloads",
     "url": "https://luckperms.net",
-    "description": "You can download LuckPerms for Spigot/Paper, BungeeCord, Sponge, Nukkit or Velocity.",
+    "description": "You can download LuckPerms for Bukkit/Spigot, BungeeCord, Sponge, Nukkit and Velocity.",
     "fields": [
       {
         "key": "Additional downloads",
@@ -488,7 +488,7 @@
       "formatting"
     ],
     "title": "LuckPerms does not display things in chat!",
-    "description": "LuckPerms is only able to send information to formatting plugins so that they display them properly. LuckPerms does not put the prefix in front of your name, you need a chat formatting plugin to do it, and you need Vault. Same goes for the tablist! If the information appears correctly when you run `lp user <you> meta info`, LuckPerms is doing its job!",
+    "description": "LuckPerms is only able to send information to formatting plugins so that they display them properly. LuckPerms does not put the prefix in front of your name, you need a chat formatting plugin to do it, and you need Vault. Same goes for the tablist! If the information appears correctly when you run `/lp user <user> info`, LuckPerms is doing its job!",
     "fields": [
       {
         "key": "Prefix isn't showing?",
