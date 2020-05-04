@@ -297,6 +297,14 @@
     "wiki": true
   },
   {
+    "name": "extracontexts",
+    "aliases": "extracontext",
+    "title": "Extra Contexts",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Context#ExtraContexts",
+    "description": "Add contexts not supported by stock LuckPerms.",
+    "wiki": true
+  },
+  {
     "name": "upgrade",
     "title": "Upgrading from v4 to v5",
     "url": "https://github.com/lucko/LuckPerms/wiki/Upgrading-from-v4-to-v5",
@@ -345,7 +353,7 @@
     "fields": [
       {
         "key": "Additional downloads",
-        "value": "https://ci.lucko.me/view/LuckPerms/"
+        "value": "https://ci.lucko.me/job/LuckPerms/"
       }
     ]
   },
@@ -497,6 +505,70 @@
       {
         "key": "What plugins can I use to format chat?",
         "value": "https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta#displaying-prefixes-and-suffixes"
+      }
+    ]
+  },
+  {
+    "name": "ssl",
+    "aliases": [
+      "usessl"
+    ],
+    "title": "The useSSL error!",
+    "description": "The useSSL error appears when you have not added the correct lines in the right place in the configuration. Make sure you do not uncomment the ones already there, but rather add them underneath the `characterEncoding` line.",
+    "fields": [
+      {
+        "key": "Read me!",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-ssl-errors"
+      },
+      {
+        "key": "What is SSL?",
+        "value": "https://www.cloudflare.com/learning/ssl/what-is-ssl/"
+      }
+    ]
+  },
+  {
+    "name": "timeout",
+    "aliases": [
+      "connectiontimeout"
+    ],
+    "title": "The connectionTimeout error!",
+    "description": "The useSSL error appears when you have not added the correct lines in the right place in the configuration. Make sure you do not uncomment the ones already there, but rather add them underneath the `characterEncoding` line.",
+    "fields": [
+      {
+        "key": "Read me!",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-ssl-errors"
+      },
+      {
+        "key": "What is SSL?",
+        "value": "https://www.cloudflare.com/learning/ssl/what-is-ssl/"
+      }
+    ]
+  },
+  {
+    "name": "hosting",
+    "aliases": [
+      "hosts"
+    ],
+    "title": "Hosting",
+    "description": "This is a great resource for hosting discussion and possible alternatives.",
+    "fields": [
+      {
+        "key": "Read me!",
+        "value": "https://admincraft.host/"
+      }
+    ]
+  },
+  {
+    "name": "inheritance",
+    "aliases": [
+      "inherits", "inherit"
+    ],
+    "title": "Inheritance",
+    "description": "What is inheritance? Click below to find out!",
+    "fields": [
+      {
+        "key": "Read me!",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Usage#inheritance"
       }
     ]
   },
