@@ -521,20 +521,6 @@
     ]
   },
   {
-    "name": "hosting",
-    "aliases": [
-      "hosts"
-    ],
-    "title": "Hosting",
-    "description": "This is a great resource for hosting discussion and possible alternatives.",
-    "fields": [
-      {
-        "key": "Read me!",
-        "value": "https://admincraft.host/"
-      }
-    ]
-  },
-  {
     "name": "nowildcard",
     "aliases": [
       "nwc"
