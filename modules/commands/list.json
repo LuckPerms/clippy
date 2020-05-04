@@ -363,7 +363,7 @@
     "fields": [
       {
         "key": "Additional downloads",
-        "value": "https://ci.lucko.me/job/LuckPerms/"
+        "value": "https://ci.lucko.me/view/LuckPerms/"
       }
     ]
   },
