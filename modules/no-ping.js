@@ -18,7 +18,7 @@ module.exports = function (client) {
 
     if (mentionsStaff) {
       // Tell them off:
-      await msg.channel.send(`Hey ${msg.author.username}! Please don't tag staff members.`);
+      await msg.channel.send(`Hey ${msg.author.username}! Please don't tag helpful/staff people directly.`);
     }
   });
 };
