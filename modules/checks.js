@@ -4,7 +4,8 @@ const checks = [
     {regex: /https?:\/\/hastebin\.com\/(\w+)(?:\.\w+)?/g, getLink: 'https://hastebin.com/raw/{code}'},
     {regex: /https?:\/\/hasteb\.in\/(\w+)(?:\.\w+)?/g, getLink: 'https://hasteb.in/raw/{code}'},
     {regex: /https?:\/\/paste\.helpch\.at\/(\w+)(?:\.\w+)?/g, getLink: 'https://paste.helpch.at/raw/{code}'},
-    {regex: /https?:\/\/bytebin\.lucko\.me\/(\w+)/g, getLink: 'https://bytebin.lucko.me/{code}'},]
+    {regex: /https?:\/\/bytebin\.lucko\.me\/(\w+)/g, getLink: 'https://bytebin.lucko.me/{code}'},
+    {regex: /https?:\/\/paste\.lucko\.me\/(\w+)(?:\.\w+)?/g, getLink: 'https://paste.lucko.me/raw/{code}'},]
 const tests = [
     {checks: [/Caused by: java\.util\.concurrent\.CompletionException: java\.sql\.SQLTransientConnectionException: luckperms - Connection is not available, request timed out after \d+ms\./,
         /Caused by: java\.sql\.SQLTransientConnectionException: luckperms - Connection is not available, request timed out after \d+ms\./,
