@@ -51,7 +51,7 @@ module.exports = function (client) {
             response = (await axios.get(getLink)).data;
         } catch (e) {
             if (e.response) {
-                if(e.response.status==404){
+                if(e.response.status === 404){
                     await message.channel.send(new RichEmbed()
                         .setTitle('Invalid Paste!')
                         .setColor('#FF0000')
