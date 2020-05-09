@@ -27,7 +27,7 @@ const tests = [
 
     {checks: [/Caused by: com\.mysql\.jdbc\.exceptions\.jdbc4\.MySQLSyntaxErrorException: User '\w+' has exceeded the 'max_user_connections' resource \(current value: \w+\)/,],
     title: 'MySQL exceeded max connections',
-    link: 'https://https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-exceeded-max-connections'},
+    link: 'https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-exceeded-max-connections'},
 ]
 module.exports = function (client) {
     client.on('message', async message => {
