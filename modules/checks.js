@@ -32,11 +32,14 @@ module.exports = function (client) {
         if (message.channel.type !== 'text' || message.author.bot) return;
         let getLink = '';
         let originalLink = '';
-        checks.forEach(pastebin => {
-            let match = pastebin.regex.exec(message.content);
+        checks.every(function(element, _){
+            let match = element.regex.exec(message.content);
             if (match) {
-                getLink = pastebin.getLink.replace('{code}', match[1]);
+                getLink = element.getLink.replace('{code}', match[1]);
                 originalLink = match[0];
+                return false;
+            }else{
+                return true;
             }
         })
         if (!getLink) return;
@@ -46,10 +49,13 @@ module.exports = function (client) {
             response = (await axios.get(getLink)).data;
         } catch (e) {
             if (e.response) {
-                await message.channel.send(new RichEmbed()
-                    .setTitle(`${e.response.status} ${e.response.statusText}`)
-                    .setColor('#FF0000')
-                    .setFooter(`${originalLink} | Sent by ${message.author.username}`))
+                if(e.response.status==404){
+                    await message.channel.send(new RichEmbed()
+                        .setTitle('Invalid Paste!')
+                        .setColor('#FF0000')
+                        .setDescription('The paste link you sent in is invalid or expired, please check the link or paste a new one.')
+                        .setFooter(`${originalLink} | Sent by ${message.author.username}`))
+                }
             }
             return;
         }
