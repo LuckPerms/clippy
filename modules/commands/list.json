@@ -235,6 +235,16 @@
     "wiki": true
   },
   {
+    "name": "inheritance",
+    "aliases": [
+      "inherit", "inheriting", "inherits"
+    ],
+    "title": "Inheritance",
+    "url": "https://github.com/lucko/LuckPerms/wiki/Usage#inheritance",
+    "description": "Learn about inheritance.",
+    "wiki": true
+  },
+  {
     "name": "tracks",
     "title": "Tracks",
     "url": "https://github.com/lucko/LuckPerms/wiki/Tracks",
@@ -294,6 +304,14 @@
     "title": "LuckPerms Configuration",
     "url": "https://github.com/lucko/LuckPerms/wiki/Configuration",
     "description": "Learn what each of the config options are for.",
+    "wiki": true
+  },
+  {
+    "name": "extracontexts",
+    "aliases": "extracontext",
+    "title": "Extra Contexts",
+    "url": "https://github.com/LuckPerms/ExtraContexts",
+    "description": "Add contexts not supported by stock LuckPerms.",
     "wiki": true
   },
   {
