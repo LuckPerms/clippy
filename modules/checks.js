@@ -32,7 +32,7 @@ const tests = [
 ]
 module.exports = function (client) {
     client.on('message', async message => {
-        if (message.channel.type !== 'text' || message.author.bot) return;
+        if (message.channel.type !== 'text') return;
         let getLink = '';
         let originalLink = '';
         checks.every(function(element, _){
