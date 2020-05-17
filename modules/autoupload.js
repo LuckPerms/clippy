@@ -14,7 +14,7 @@ module.exports = client => {
             let response = await axios.post(`${bytebin}/post`, content.data, {
                 headers: {'Content-Type': 'text/raw'}
             });
-            await message.channel.send(`Automatic upload of  \`${attachment.filename}\`: ${bytebin}/${response.data.key}`);
+            await message.channel.send(`Please use ${bytebin} to send files in the future. I have automatically uploaded \`${attachment.filename}\` for you: ${bytebin}/${response.data.key}`);
         }
     })
 }
