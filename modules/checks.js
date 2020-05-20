@@ -59,7 +59,7 @@ module.exports = function (client) {
         if (!getLink) return;
         let response = '';
         try {
-            console.log(`Getting pastebin ${getLink}`)
+            console.log(`Getting pastebin ${getLink}`);
             response = (await axios.get(getLink)).data;
         } catch (e) {
             if (e.response) {
@@ -68,7 +68,7 @@ module.exports = function (client) {
                         .setTitle('Invalid Paste!')
                         .setColor('#FF0000')
                         .setDescription('The paste link you sent in is invalid or expired, please check the link or paste a new one.')
-                        .setFooter(`${originalLink} | Sent by ${message.author.username}`))
+                        .setFooter(`${originalLink} | Sent by ${message.author.username}`));
                 }
             }
             return;
@@ -78,7 +78,7 @@ module.exports = function (client) {
             let matched = false;
             let cause = '';
             for (let check of test.checks) {
-                let match = check.exec(response)
+                let match = check.exec(response);
                 if (match) {
                     matched = true;
                     cause = match;
@@ -89,9 +89,9 @@ module.exports = function (client) {
                 embed.setTitle(test.title);
                 if (test.description) embed.setDescription(test.description);
                 if (test.link) embed.addField('Read More', test.link);
-                embed.addField('Caused By', `\`\`\`${cause}\`\`\``)
-                embed.setFooter(`${originalLink} | Sent by ${message.author.username}`)
-                embed.setColor('#96dd35')
+                embed.addField('Caused By', `\`\`\`${cause}\`\`\``);
+                embed.setFooter(`${originalLink} | Sent by ${message.author.username}`);
+                embed.setColor('#96dd35');
                 await message.channel.send(embed);
             }
         }
