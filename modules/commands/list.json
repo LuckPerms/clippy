@@ -308,7 +308,9 @@
   },
   {
     "name": "extracontexts",
-    "aliases": "extracontext",
+    "aliases": [
+      "extracontext"
+    ],
     "title": "Extra Contexts",
     "url": "https://github.com/LuckPerms/ExtraContexts",
     "description": "Add contexts not supported by stock LuckPerms.",
