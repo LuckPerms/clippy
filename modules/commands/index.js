@@ -76,7 +76,7 @@ module.exports = function (client) {
       embed
           .setTitle(`🔖 ${item.title}`)
           .addField('Read more', item.url)
-          .setFooter('LuckPerms wiki', 'https://luckperms.net/img/logo.b5b1477f.png');
+          .setFooter('LuckPerms wiki', 'https://luckperms.net/logo.png');
     } else {
       embed.setTitle(`${item.title}`);
 
