@@ -520,6 +520,23 @@
       }
     ]
   },
+  "name": "tab",
+    "tablist": [
+      "tabformat"
+    ],
+    "title": "LuckPerms does not display things in the tablist!",
+    "description": "LuckPerms is only able to send information to formatting plugins so that they display them properly. LuckPerms does not put the prefix in the tablist, you require a separate plugin to do so. If the information appears correctly when you run `/lp user <user> info`, LuckPerms is doing its job!",
+    "fields": [
+      {
+        "key": "Prefix isn't showing?",
+        "value": "https://github.com/lucko/LuckPerms/wiki/FAQ#why-are-prefixessuffixes-not-working"
+      },
+      {
+        "key": "What should I do?",
+        "value": "Ensure you have a tablist formatting plugin, like TAB or Nametagedit. Ensure you have Vault, and if your tablist plugin requires it, PlaceholderAPI. (see !papi)"
+      }
+    ]
+  },
   {
     "name": "nowildcard",
     "aliases": [
