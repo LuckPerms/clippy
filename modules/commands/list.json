@@ -521,6 +521,24 @@
     ]
   },
   {
+    "name": "tab",
+    "aliases": [
+      "tablist"
+    ],
+    "title": "Tablist",
+    "description": "LuckPerms is only able to send information to formatting plugins so that they display them properly. LuckPerms does not put the prefix in front of your name on the tablist, you need a tab formatting plugin to do it, and you need Vault. Same goes for the chat! If the information appears correctly when you run `/lp user <user> info`, LuckPerms is doing its job!",
+    "fields": [
+      {
+        "key": "Prefix isn't showing?",
+        "value": "https://github.com/lucko/LuckPerms/wiki/FAQ#why-are-prefixessuffixes-not-working"
+      },
+      {
+        "key": "How can I use TAB to format my tablist?",
+        "value": "https://github.com/montlikadani/TabList/wiki/How-to-show-LuckPerms-prefix-in-Tablist%3F"
+      }
+    ]
+  },
+  {
     "name": "nowildcard",
     "aliases": [
       "nwc"
