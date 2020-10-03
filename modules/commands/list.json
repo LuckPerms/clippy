@@ -521,8 +521,9 @@
     ]
   },
   "name": "tab",
-    "tablist": [
-      "tabformat"
+    "aliases": [
+      "tabformat",
+      "tablist"
     ],
     "title": "LuckPerms does not display things in the tablist!",
     "description": "LuckPerms is only able to send information to formatting plugins so that they display them properly. LuckPerms does not put the prefix in the tablist, you require a separate plugin to do so. If the information appears correctly when you run `/lp user <user> info`, LuckPerms is doing its job!",
