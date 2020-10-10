@@ -503,6 +503,24 @@
     ]
   },
   {
+    "name": "editorsafety",
+    "aliases": [
+      "edsaf", "edpriv"
+    ],
+    "title": "It is safe to send an editor link in public.",
+    "description": "Due to the nature of the web editor, the link itself has no connection to the server - it is simply a reflection of your permissions setup when you ran the `/lp editor` command. Due to this, a random internet person (like LP support) would have to both be on the server AND have ingame permissions to apply edits - permissions which have to be given. As neither of these things are the case, it is safe to send your editor link, and we ask that you do in order to help us to help you expediently solve your difficulties.",
+    "fields": [
+      {
+        "key": "More Information:",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Web-Editor"
+      },
+      {
+        "key": "Concerns about the proprietary nature of your permissions setup?",
+        "value": "Please, don't be. We're here to help, not steal your permissions setup. Additionally, permissions can be tested by players simply joining your server and seeing what they can do."
+      }
+    ]
+  },
+  {
     "name": "chat",
     "aliases": [
       "formatting"
