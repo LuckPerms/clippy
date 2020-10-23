@@ -508,7 +508,7 @@
       "edsaf", "edpriv"
     ],
     "title": "It is safe to send an editor link in public.",
-    "description": "Due to the nature of the web editor, the link itself has no connection to the server - it is simply a reflection of your permissions setup when you ran the `/lp editor` command. Due to this, a random internet person (like LP support) would have to both be on the server AND have ingame permissions to apply edits - permissions which have to be given. As neither of these things are the case, it is safe to send your editor link, and we ask that you do in order to help us to help you expediently solve your difficulties.",
+    "description": "Any changes made in the editor have to be applied using the `/lp applyedits` command - impossible unless the person with the link is also connected to the server and with the required in-game permissions to use LuckPerms commands. It's effectively just as safe to share an editor link as it would be to share a screenshot of your permissions or a pastebin of a configuration file. The editor doesn't contain any sensitive data (except perhaps player names).",
     "fields": [
       {
         "key": "More Information:",
