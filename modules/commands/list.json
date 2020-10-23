@@ -516,6 +516,24 @@
     ]
   },
   {
+    "name": "editorsafety",
+    "aliases": [
+      "edsaf", "edpriv"
+    ],
+    "title": "It is safe to send an editor link in public.",
+    "description": "Any changes made in the editor have to be applied using the `/lp applyedits` command - impossible unless the person with the link is also connected to the server and with the required in-game permissions to use LuckPerms commands. It's effectively just as safe to share an editor link as it would be to share a screenshot of your permissions or a pastebin of a configuration file. The editor doesn't contain any sensitive data (except perhaps player names).",
+    "fields": [
+      {
+        "key": "More Information:",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Web-Editor"
+      },
+      {
+        "key": "Concerns about the proprietary nature of your permissions setup?",
+        "value": "Please, don't be. We're here to help, not steal your permissions setup. Additionally, permissions can be tested by players simply joining your server and seeing what they can do."
+      }
+    ]
+  },
+  {
     "name": "formatting",
     "aliases": [
       "chat", "tab", "tablist"
