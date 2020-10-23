@@ -383,6 +383,21 @@
     ]
   },
   {
+    "name": "translations",
+    "aliases": [
+      "translate", "translating", "crowdin"
+    ],
+    "title": "Translating LuckPerms",
+    "url": "https://crowdin.com/project/luckperms",
+    "description": "Translations for LuckPerms are managed on Crowdin. Any contributions are very welcome!",
+    "fields": [
+      {
+        "key": "Installing the community translations",
+        "value": "https://github.com/lucko/LuckPerms/wiki/Locale-and-Translations"
+      }
+    ]
+  },
+  {
     "name": "cauldron",
     "title": "Cauldron, Thermos, Forge + Bukkit Hacks",
     "url": "https://github.com/lucko/LuckPerms/wiki/Installation#cauldron-thermos-etc",
