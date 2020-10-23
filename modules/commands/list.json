@@ -516,19 +516,19 @@
     ]
   },
   {
-    "name": "chat",
+    "name": "formatting",
     "aliases": [
-      "formatting"
+      "chat", "tab", "tablist"
     ],
-    "title": "LuckPerms does not display things in chat!",
-    "description": "LuckPerms is only able to send information to formatting plugins so that they display them properly. LuckPerms does not put the prefix in front of your name, you need a chat formatting plugin to do it, and you need Vault. Same goes for the tablist! If the information appears correctly when you run `/lp user <user> info`, LuckPerms is doing its job!",
+    "title": "LuckPerms does not perform any chat/tablist formatting of its own!",
+    "description": "LuckPerms only acts as the source for prefixes / suffixes, it doesn't actually apply them. You need an appropriately configured chat/tablist formatting plugin for them to be displayed. If the values appear correctly when you run `/lp user <user> info`, LuckPerms is doing its job!",
     "fields": [
       {
-        "key": "Prefix isn't showing?",
+        "key": "FAQ answer: Prefix isn't showing?",
         "value": "https://github.com/lucko/LuckPerms/wiki/FAQ#why-are-prefixessuffixes-not-working"
       },
       {
-        "key": "What plugins can I use to format chat?",
+        "key": "List of chat/tablist formatting plugins that work with LuckPerms",
         "value": "https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta#displaying-prefixes-and-suffixes"
       }
     ]
