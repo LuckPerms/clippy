@@ -548,12 +548,12 @@
     ]
   },
   {
-    "name": "libraries",
+    "name": "libsdir",
     "aliases": [
       "libs", "dependencies"
     ],
     "title": "LuckPerms dependencies",
-    "description": "LuckPerms requires several libraries to work and make use of various functionalities. If you're getting a startup error such as `NoClassDefFoundError`, `ClassNotFoundException` or \"Unable to load dependency...\", stop your server, delete the `/plugins/LuckPerms/libs/` directory and start it up again."
+    "description": "LuckPerms requires several libraries in order to operate. If you're getting a startup error such as `NoClassDefFoundError`, `ClassNotFoundException` or \"Unable to load dependency...\", stop your server, delete the `/plugins/LuckPerms/libs/` directory and start it up again."
   },
   {
     "name": "cookbook",
@@ -562,6 +562,6 @@
     ],
     "title": "API Cookbook",
     "url": "https://github.com/LuckPerms/api-cookbook",
-    "description": "You can read some simple examples on how to do various queries or changes to users and groups, listen to LuckPerms events, and more."
+    "description": "The cookbook is a working example plugin which shows how to get/change data for users and groups, listen to LuckPerms events, and more."
   }
 ]
