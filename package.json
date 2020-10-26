@@ -9,8 +9,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
     "dateformat": "^3.0.3",
     "discord.js": "^11.4.2",
+    "mime-types": "^2.1.27",
     "mz": "^2.7.0"
   }
 }

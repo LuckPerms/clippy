@@ -26,6 +26,9 @@ module.exports = function (client) {
     // Grab the command
     const trigger = message.content.toLowerCase().substring(1).split(' ')[0].replace(/[^0-9a-z]/gi, '');
 
+    // Ignore if trigger is blank
+    if (!trigger) return;
+
     // Initiate the embed
     let embed = new discord.RichEmbed();
 
@@ -34,8 +37,8 @@ module.exports = function (client) {
       embed
           .setColor('#94df03')
           .setTitle('Available commands:')
-          .addField('-', leftList, true)
-          .addField('-', rightList, true);
+          .addField('\u200E', leftList, true)
+          .addField('\u200E', rightList, true);
 
       await message.channel.send({ embed });
       return;
@@ -73,7 +76,7 @@ module.exports = function (client) {
       embed
           .setTitle(`🔖 ${item.title}`)
           .addField('Read more', item.url)
-          .setFooter('LuckPerms wiki', 'https://luckperms.net/assets/logo/80px.png');
+          .setFooter('LuckPerms wiki', 'https://luckperms.net/logo.png');
     } else {
       embed.setTitle(`${item.title}`);
 
