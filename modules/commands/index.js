@@ -1,4 +1,5 @@
 const discord = require('discord.js');
+const axios = require('axios');
 
 // Import commands and sort by alphabetical order (for !help command)
 const commands = require('./list.json').sort((a, b) => {
@@ -16,6 +17,24 @@ const splitCommands = (start, end) => {
 
 const leftList = splitCommands(0, Math.ceil(commands.length / 2));
 const rightList = splitCommands(Math.ceil(commands.length / 2));
+
+let metaData = {};
+
+const fetchMetaData = async () => {
+  try {
+    const { data } = await axios.get('https://metadata.luckperms.net/data/all');
+    const { data: translations } = await axios.get('https://metadata.luckperms.net/data/translations');
+    metaData = { ...data, translations };
+    console.log(metaData);
+  } catch (e) {
+    console.error(e);
+  }
+};
+
+fetchMetaData();
+setInterval(() => {
+  fetchMetaData();
+}, 60000);
 
 module.exports = function (client) {
   client.on('message', async message => {
@@ -39,6 +58,33 @@ module.exports = function (client) {
           .setTitle('Available commands:')
           .addField('\u200E', leftList, true)
           .addField('\u200E', rightList, true);
+
+      await message.channel.send({ embed });
+      return;
+    }
+
+    if (trigger === 'latest') {
+      embed
+          .setColor('#94df03')
+          .setTitle('Latest version')
+          .setDescription(metaData.version);
+
+      await message.channel.send({ embed });
+      return;
+    }
+
+    if (['translationprogress', 'tprogress'].includes(trigger)) {
+      embed
+          .setColor('#94df03')
+          .setTitle('Translation progress')
+          .setDescription('If you can help translate LuckPerms, please visit our Crowdin project!\nhttps://crowdin.com/project/luckperms');
+
+      for (let key in metaData.translations.languages) {
+        const language = metaData.translations.languages[key];
+        const countryCode = language.localeTag.split('_')[1].toLowerCase();
+        const emoji = countryCode === 'pt' ? ':pirate_flag:' : `:flag_${countryCode}:`;
+        embed.addField(`${emoji} ${language.name}`, `${language.progress}%`, true);
+      }
 
       await message.channel.send({ embed });
       return;
