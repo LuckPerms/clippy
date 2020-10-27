@@ -1,4 +1,4 @@
-git const mimeType = require('mime-types');
+const mimeType = require('mime-types');
 const axios = require('axios');
 
 const contentTypes = ['application/json', 'text/plain', 'text/yaml'];
