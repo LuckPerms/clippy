@@ -49,7 +49,7 @@ module.exports = function (client) {
     if (!trigger) return;
 
     // Initiate the embed
-    let embed = new discord.RichEmbed();
+    let embed = new discord.MessageEmbed();
 
     // !help command
     if (trigger === 'help') {

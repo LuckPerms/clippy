@@ -1,6 +1,7 @@
 const config = require('./checks.config');
 const axios = require('axios');
-const RichEmbed = require('discord.js').RichEmbed;
+const MessageEmbed = require('discord.js').MessageEmbed;
+
 module.exports = function (client) {
     client.on('message', async message => {
         if (message.channel.type !== 'text') return;
@@ -24,7 +25,7 @@ module.exports = function (client) {
         } catch (e) {
             if (e.response) {
                 if(e.response.status === 404){
-                    await message.channel.send(new RichEmbed()
+                    await message.channel.send(new MessageEmbed()
                         .setTitle('Invalid Paste!')
                         .setColor('#FF0000')
                         .setDescription('The paste link you sent in is invalid or expired, please check the link or paste a new one.')
@@ -45,7 +46,7 @@ module.exports = function (client) {
                 }
             }
             if (matched) {
-                let embed = new RichEmbed();
+                let embed = new MessageEmbed();
                 embed.setTitle(test.title);
                 if (test.description) embed.setDescription(test.description);
                 if (test.link) embed.addField('Read More', test.link);

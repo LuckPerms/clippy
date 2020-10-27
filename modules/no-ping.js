@@ -6,14 +6,14 @@ module.exports = function (client) {
     if (msg.channel.type !== 'text') return;
     if (msg.mentions.members.size === 0) return;
 
-    const senderIsStaff = msg.member.roles.some(role => data.staff_roles.indexOf(role.name) !== -1);
+    const senderIsStaff = msg.member.roles.cache.some(role => data.staff_roles.indexOf(role.name) !== -1);
     if (senderIsStaff) {
       return;
     }
 
     const mentionsStaff = msg.mentions.members.some(member => {
       // If the message mentions any members that satisfy the following:
-      return member.roles.some(role => data.staff_roles.indexOf(role.name) !== -1);
+      return member.roles.cache.some(role => data.staff_roles.indexOf(role.name) !== -1);
     });
 
     if (mentionsStaff) {

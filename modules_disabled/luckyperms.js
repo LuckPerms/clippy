@@ -10,7 +10,7 @@ module.exports = (client) => {
 
     // If the stripped message contains luckyperms
     if (msg.content.toLowerCase().replace(/\W/gm, '').indexOf('luckyperms') !== -1) {
-      msg.channel.send(new discord.RichEmbed()
+      await msg.channel.send(new discord.MessageEmbed()
           .setTitle('It looks like you\'re trying to spell LuckPerms!')
           .setDescription('A useful tip to remember how to spell it is: LUCK is not LUCKY')
           .setThumbnail('http://lssinfotech.files.wordpress.com/2011/05/clippy.jpg')
