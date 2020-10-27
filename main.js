@@ -9,7 +9,10 @@ client.on('ready', () => {
 });
 
 fs.readdirSync('modules')
-    .map(mod => `./modules/${mod}`)
+    .map(mod => {
+      console.log("Loading module: " + mod);
+      return `./modules/${mod}`;
+    })
     .map(mod => require(mod))
     .forEach(mod => mod(client));
 

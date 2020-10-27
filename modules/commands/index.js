@@ -25,7 +25,7 @@ const fetchMetaData = async () => {
     const { data } = await axios.get('https://metadata.luckperms.net/data/all');
     const { data: translations } = await axios.get('https://metadata.luckperms.net/data/translations');
     metaData = { ...data, translations };
-    console.log(metaData);
+    //console.log(metaData);
   } catch (e) {
     console.error(e);
   }

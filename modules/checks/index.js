@@ -19,7 +19,7 @@ module.exports = function (client) {
         if (!getLink) return;
         let response = '';
         try {
-            console.log(`Getting pastebin ${getLink}`);
+            //console.log(`Getting pastebin ${getLink}`);
             response = (await axios.get(getLink)).data;
         } catch (e) {
             if (e.response) {
