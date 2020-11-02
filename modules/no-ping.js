@@ -1,6 +1,6 @@
 const data = require('../data.json');
 
-module.exports = function (client) {
+module.exports = (client) => {
   client.on('message', async msg => {
     // Ignore DMs and messages that don't mention anyone
     if (msg.channel.type !== 'text') return;
