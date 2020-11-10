@@ -25,7 +25,6 @@ const fetchMetaData = async () => {
     const { data } = await axios.get('https://metadata.luckperms.net/data/all');
     const { data: translations } = await axios.get('https://metadata.luckperms.net/data/translations');
     metaData = { ...data, translations };
-    //console.log(metaData);
   } catch (e) {
     console.error(e);
   }
@@ -74,17 +73,22 @@ module.exports = function (client) {
     }
 
     if (['translationprogress', 'tprogress'].includes(trigger)) {
+      const sortedLanguages = Object.values(metaData.translations.languages).sort((a, b) => {
+        if (a.name < b.name) return -1;
+        if (a.name > b.name) return 1;
+        return 0;
+      });
+
       embed
           .setColor('#94df03')
           .setTitle('Translation progress')
           .setDescription('If you can help translate LuckPerms, please visit our Crowdin project!\nhttps://crowdin.com/project/luckperms');
 
-      for (let key in metaData.translations.languages) {
-        const language = metaData.translations.languages[key];
-        const countryCode = language.localeTag.split('_')[1].toLowerCase();
-        const emoji = countryCode === 'pt' ? ':pirate_flag:' : `:flag_${countryCode}:`;
-        embed.addField(`${emoji} ${language.name}`, `${language.progress}%`, true);
-      }
+      sortedLanguages.forEach(({ name, localeTag, progress }) => {
+        const countryCode = localeTag.split('_')[1].toLowerCase();
+        const emoji = localeTag === 'en_PT' ? ':pirate_flag:' : `:flag_${countryCode}:`;
+        embed.addField(`${emoji} ${name}`, `${progress}%`, true);
+      });
 
       await message.channel.send({ embed });
       return;
