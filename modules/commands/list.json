@@ -616,7 +616,7 @@
     "aliasas": [
       "checkbungee", "networkcheck", "checknetwork"
     ],
-    "title": "Running a network and getting UUID mismatches?"
+    "title": "Running a network and getting UUID mismatches?",
     "description": "Please double check that:\n`1.` Bungeecord `config.yml` has `ip_forward` **and** `online_mode` set to **`true`**\n`2.` *All* backend servers' `spigot.yml` has `bungeecord` set to **`true`**\n`3.` *All* backend servers' `server.properties` have `online-mode` set to **`false`**"
   }
 ]
