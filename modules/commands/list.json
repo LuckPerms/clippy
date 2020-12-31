@@ -596,5 +596,27 @@
     "title": "API Cookbook",
     "url": "https://github.com/LuckPerms/api-cookbook",
     "description": "The cookbook is a working example plugin which shows how to get/change data for users and groups, listen to LuckPerms events, and more."
+  },
+  {
+    "name": "testingperms",
+    "aliasas": [
+      "testperms", "testverbose", "testingverbose"
+    ],
+    "title": "How-to test permissions",
+    "description": "Small list of things for you to make sure when testing permissions:\n`1.` Don't test as op, your players/general staff will most likely not have op\n`2.` Make sure you don't have any special permissions (e.g. `*` or *the same permission you are testing*) on your user (`/lp user <user> permission info`)\n`3.` Make sure your parent groups are the ones the target audience you are testing will have (if you are testing mod perms, don't have owner as parent)\n`4.` **[Use verbose](https://luckperms.net/wiki/Verbose)** to see *exactly* what's going on, what permissions are being checked",
+    "fields": [
+      {
+        "key": "Also read:",
+        "value": "Verbose\nhttps://luckperms.net/wiki/Verbose"
+      }
+    ]
+  },
+  {
+    "name": "bungeecheck",
+    "aliasas": [
+      "checkbungee", "networkcheck", "checknetwork"
+    ],
+    "title": "Running a network and getting UUID mismatches?",
+    "description": "Please double check that:\n`1.` BungeeCord `config.yml` has `ip_forward` **and** `online_mode` set to **`true`**\n`2.` *All* backend servers' `spigot.yml` has `bungeecord` set to **`true`**\n`3.` *All* backend servers' `server.properties` have `online-mode` set to **`false`**"
   }
 ]
