@@ -590,7 +590,7 @@
   },
   {
     "name": "cookbook",
-    "aliasas": [
+    "aliases": [
       "apicookbook", "apiexamples"
     ],
     "title": "API Cookbook",
@@ -599,7 +599,7 @@
   },
   {
     "name": "testingperms",
-    "aliasas": [
+    "aliases": [
       "testperms", "testverbose", "testingverbose"
     ],
     "title": "How-to test permissions",
@@ -613,7 +613,7 @@
   },
   {
     "name": "bungeecheck",
-    "aliasas": [
+    "aliases": [
       "checkbungee", "networkcheck", "checknetwork"
     ],
     "title": "Running a network and getting UUID mismatches?",
