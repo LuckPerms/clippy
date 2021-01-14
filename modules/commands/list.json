@@ -374,7 +374,7 @@
     ],
     "title": "Downloads",
     "url": "https://luckperms.net/download",
-    "description": "You can download LuckPerms for Bukkit/Spigot, BungeeCord, Sponge, Nukkit and Velocity.",
+    "description": "You can download LuckPerms for Bukkit/Spigot, BungeeCord, Sponge, Nukkit, Fabric and Velocity.",
     "fields": [
       {
         "key": "Additional downloads",
