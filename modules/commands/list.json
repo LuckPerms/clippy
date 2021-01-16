@@ -6,14 +6,14 @@
     ],
     "title": "LuckPerms Wiki",
     "url": "https://luckperms.net/wiki",
-    "description": "Learn how to use LuckPerms and all of its features by reading the wiki on GitHub.",
+    "description": "Learn how to use LuckPerms and all of its features by reading the wiki.",
     "wiki": true
   },
   {
     "name": "install",
     "title": "Installing LuckPerms",
     "url": "https://luckperms.net/wiki/Installation",
-    "description": "You can install LuckPerms on Spigot/Paper, Sponge, BungeeCord/Waterfall, Velocity and others. Check the installation guide for more info on setting up LuckPerms.",
+    "description": "You can install LuckPerms on Bukkit/Spigot/Paper, BungeeCord, Sponge, Fabric, Nukkit and Velocity servers. Check the installation guide for more info on setting up LuckPerms.",
     "wiki": true
   },
   {
@@ -24,7 +24,7 @@
     ],
     "title": "Network Installation",
     "url": "https://luckperms.net/wiki/Network-Installation",
-    "description": "If you run a Bungeecord network, learn how to correctly setup LuckPerms on all server instances (including Bungee).",
+    "description": "If you run a BungeeCord network, learn how to correctly setup LuckPerms on all server instances (including Bungee).",
     "fields": [
       {
         "key": "Also read:",
@@ -374,7 +374,7 @@
     ],
     "title": "Downloads",
     "url": "https://luckperms.net/download",
-    "description": "You can download LuckPerms for Bukkit/Spigot, BungeeCord, Sponge, Nukkit, Fabric and Velocity.",
+    "description": "You can download LuckPerms for Bukkit/Spigot/Paper, BungeeCord, Sponge, Fabric, Nukkit and Velocity.",
     "fields": [
       {
         "key": "Additional downloads",
