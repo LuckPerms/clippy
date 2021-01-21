@@ -16,7 +16,7 @@ module.exports = client => {
         let response = await axios.post(`${bytebin}/post`, content.data, {
           headers: {'Content-Type': contentType}
         });
-        await message.channel.send(`Please use ${bytebin} to send files in the future. I have automatically uploaded \`${attachment.filename}\` for you: ${bytebin}/${response.data.key}`);
+        await message.channel.send(`Please use ${bytebin} to send files in the future. I have automatically uploaded \`${attachment.name}\` for you: ${bytebin}/${response.data.key}`);
       } catch (e) {
         await message.channel.send(`Your file could not be automatically uploaded to bytebin. Please use ${bytebin} to share files.`)
       }
