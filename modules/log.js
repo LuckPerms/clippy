@@ -1,7 +1,11 @@
 const dateFormat = require('dateformat');
 const fs = require('fs');
 
-const getLogFileName = (date) => 'logs/' + dateFormat(date, 'yyyy-mm-dd') + '.log';
+if (!fs.existsSync('logs/')) {
+  fs.mkdirSync('logs');
+}
+
+const getLogFileName = (date) => `logs/${dateFormat(date, 'yyyy-mm-dd')}.log`;
 const getLogFileTime = (date) => dateFormat(date, 'hh-MM-ss TT');
 
 module.exports = (client) => {

@@ -1,6 +1,4 @@
 const axios = require('axios');
-const config = require('../config.json');
-const data = require('../data.json');
 
 async function update(client) { 
   const donorsInfo = await axios.get('https://metadata.luckperms.net/data/donors');
@@ -23,8 +21,8 @@ async function update(client) {
     text += "⇒ " + name + "\n";
   }
 
-  const guild = await client.guilds.fetch(config.guild);
-  const channel = guild.channels.resolve(data.patreon_channel);
+  const guild = await client.guilds.fetch(process.env.DISCORD_GUILD);
+  const channel = guild.channels.resolve(process.env.DISCORD_PATREON_CHANNEL);
   const messages = await channel.messages.fetch({limit: 10});
 
   for (const message of messages.values()) {

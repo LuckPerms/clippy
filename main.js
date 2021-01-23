@@ -1,6 +1,7 @@
+require('dotenv').config();
+
 const discord = require('discord.js');
-const config = require('./config.json');
-const fs = require('mz/fs'); // mz/fs works exactly the same as fs but with promises
+const fs = require('fs');
 
 const client = new discord.Client();
 
@@ -16,4 +17,4 @@ fs.readdirSync('modules')
     .map(mod => require(mod))
     .forEach(mod => mod(client));
 
-client.login(config.token);
+client.login(process.env.DISCORD_BOT_TOKEN);
