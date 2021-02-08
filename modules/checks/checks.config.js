@@ -17,12 +17,12 @@ module.exports = {
         /com\.mysql\.jdbc\.exceptions\.jdbc4\.CommunicationsException.+Communications link failure/
       ],
       title: 'Luckperms cannot connect to your MySQL server',
-      link: 'https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#luckperms-cannot-connect-to-my-mysql-server'
+      link: 'https://luckperms.net/wiki/Storage-system-errors#luckperms-cannot-connect-to-my-mysql-server'
     },
     {
       checks: [/Establishing SSL connection without server's identity verification is not recommended\./],
       title: 'MySQL SSL Error',
-      link: 'https://github\.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-ssl-errors'
+      link: 'https://luckperms.net/wiki/Storage-system-errors#mysql-ssl-errors'
     },
     {
       checks: [
@@ -30,14 +30,14 @@ module.exports = {
         /me\.lucko\.luckperms\.lib\.hikari\.pool\.PoolBase.+Failed to validate connection me\.lucko\.luckperms\.lib\.mariadb\.MariaDbConnection@.+ cannot be called on a closed connection\)/
       ],
       title: 'MySQL "No operations allowed after connection closed" error',
-      link: 'https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-no-operations-allowed-after-connection-closed-error'
+      link: 'https://luckperms.net/wiki/Storage-system-errors#mysql-no-operations-allowed-after-connection-closed-error'
     },
     {
       checks: [
         /.+SyntaxErrorException: User '.+' has exceeded the 'max_user_connections' resource \(current value:.+/,
       ],
       title: 'MySQL exceeded max connections',
-      link: 'https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-exceeded-max-connections'
+      link: 'https://luckperms.net/wiki/Storage-system-errors#mysql-exceeded-max-connections'
     },
   ]
 }
