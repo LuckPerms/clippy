@@ -16,7 +16,7 @@ module.exports = {
         /java\.sql\.SQLTransientConnectionException.+Connection is not available, request timed out after \d+ms\./,
         /com\.mysql\.jdbc\.exceptions\.jdbc4\.CommunicationsException.+Communications link failure/
       ],
-      title: 'Luckperms cannot connect to your MySQL server',
+      title: 'LuckPerms cannot connect to your MySQL server',
       link: 'https://luckperms.net/wiki/Storage-system-errors#luckperms-cannot-connect-to-my-mysql-server'
     },
     {
