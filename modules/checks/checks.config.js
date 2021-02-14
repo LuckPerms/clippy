@@ -22,7 +22,7 @@ module.exports = {
       link: 'https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#luckperms-cannot-connect-to-my-mysql-server'
     },
     {
-      checks: [/Establishing SSL connection without server's identity verification is not recommended./],
+      checks: [/Establishing SSL connection without server's identity verification is not recommended\./],
       title: 'MySQL SSL Error',
       link: 'https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-ssl-errors'
     },
