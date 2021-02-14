@@ -24,7 +24,7 @@ module.exports = {
     {
       checks: [/Establishing SSL connection without server's identity verification is not recommended\./],
       title: 'MySQL SSL Error',
-      link: 'https://github\.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-ssl-errors'
+      link: 'https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-ssl-errors'
     },
     {
       checks: [
@@ -36,7 +36,7 @@ module.exports = {
     },
     {
       checks: [
-        /Caused by: com\.mysql\.jdbc\.exceptions\.jdbc4\.MySQLSyntaxErrorException: User '\w+' has exceeded the 'max_user_connections' resource \(current value: \w+\)/,
+        /Caused by: com\.mysql\.jdbc\.exceptions\.jdbc4\.MySQLSyntaxErrorException: User '\\w+' has exceeded the 'max_user_connections' resource \(current value: \w+\)/,
       ],
       title: 'MySQL exceeded max connections',
       link: 'https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-exceeded-max-connections'
