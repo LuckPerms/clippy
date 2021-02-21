@@ -20,14 +20,7 @@ const splitCommands = (start, end) => {
 const leftList = splitCommands(0, Math.ceil(commands.length / 2));
 const rightList = splitCommands(Math.ceil(commands.length / 2));
 
-const commandNames = [];
-commands.forEach(command => {
-  commandNames.push(command.name);
-  command.aliases?.forEach(alias => {
-    commandNames.push(alias);
-  });
-});
-
+const commandNames = commands.reduce((acc, cur) => [ ...acc, cur.name, ...(cur.aliases || []) ], []);
 let metaData = {};
 
 const fetchMetaData = async () => {
