@@ -132,18 +132,16 @@ module.exports = function (client) {
       });
     }
 
-    // Check for misspelt command and suggest it
+    // If no command found, throw an error
     if (!item) {
+      // Check if they slightly misspelt a command and give a hint
       const matches = stringSimilarity.findBestMatch(trigger, commandNames);
       const bestMatch = matches?.bestMatch;
       if (bestMatch.rating >= config.similaritySensitivity ?? 0.5) {
         await message.channel.send(`Did you mean \`!${bestMatch.target}\`?\nType \`!help\` for a list of commands.`);
         return;
       }
-    }
 
-    // If no command found, throw an error
-    if (!item) {
       await message.channel.send(`Sorry! I do not understand the command \`!${trigger}\`\nType \`!help\` for a list of commands.`);
       return;
     }
