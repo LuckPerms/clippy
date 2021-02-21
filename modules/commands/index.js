@@ -1,5 +1,7 @@
 const discord = require('discord.js');
 const axios = require('axios');
+const stringSimilarity = require('string-similarity');
+const config = require('../../config.json');
 
 // Import commands and sort by alphabetical order (for !help command)
 const commands = require('./list.json').sort((a, b) => {
@@ -17,6 +19,14 @@ const splitCommands = (start, end) => {
 
 const leftList = splitCommands(0, Math.ceil(commands.length / 2));
 const rightList = splitCommands(Math.ceil(commands.length / 2));
+
+const commandNames = [];
+commands.forEach(command => {
+  commandNames.push(command.name);
+  command.aliases?.forEach(alias => {
+    commandNames.push(alias);
+  });
+});
 
 let metaData = {};
 
@@ -120,6 +130,16 @@ module.exports = function (client) {
         if (!command.aliases) return;
         return command.aliases.includes(trigger);
       });
+    }
+
+    // Check for misspelt command and suggest it
+    if (!item) {
+      const matches = stringSimilarity.findBestMatch(trigger, commandNames);
+      const bestMatch = matches?.bestMatch;
+      if (bestMatch.rating >= config.similaritySensitivity ?? 0.5) {
+        await message.channel.send(`Did you mean \`!${bestMatch.target}\`?\nType \`!help\` for a list of commands.`);
+        return;
+      }
     }
 
     // If no command found, throw an error
