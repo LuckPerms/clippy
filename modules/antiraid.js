@@ -1,6 +1,6 @@
 const fs = require("fs/promises");
 const { MessageEmbed } = require("discord.js");
-const CACHE_PATH = '/tmp/luckperms-joincache.json';
+const CACHE_PATH = 'joincache.json';
 
 let joinsList = [];
 let joinsAllowed = true;
@@ -27,7 +27,7 @@ module.exports = (client) => {
   });
 
   client.on('guildMemberAdd', async (member) => {
-    if (!joinsAllowed) return await member.kick({ reason: 'Anti-Raid Lockdown' });
+    if (!joinsAllowed) return await member.kick({ reason: 'Anti-Raid: please try re-joining later' });
 
     const { id, joinedTimestamp } = member;
     const serializableMember = { id, joinedTimestamp };
@@ -80,8 +80,8 @@ module.exports = (client) => {
         try {
           const guildMember = await msg.guild.members.fetch(member.id);
 
-          if (action === 'ban') await guildMember.ban({ days: 1, reason: `Anti-Raid by ${msg.author.tag}` });
-          else if (action === 'kick') await guildMember.kick({ reason: `Anti-Raid by ${msg.author.tag}` });
+          if (action === 'ban') await guildMember.ban({ days: 1, reason: 'Anti-Raid' });
+          else if (action === 'kick') await guildMember.kick({ reason: 'Anti-Raid' });
 
           // Remove the banned member from the joinlist so future ban commands don't try to re-ban them
           joinsList = joinsList.filter(m => m.id !== member.id);
