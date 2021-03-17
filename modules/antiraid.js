@@ -38,7 +38,7 @@ module.exports = (client) => {
 
   client.on('message', async (msg) => {
     // Check permission - no real need for an error message as nobody will know about the command
-    if (!msg.guild || !msg.member.hasPermission('BAN_MEMBERS') || msg.author.bot) return;
+    if (!msg.guild || msg.author.bot || !msg.member.hasPermission('BAN_MEMBERS')) return;
 
     let parts = msg.content.split(" ");
     let command = parts[0].substring(1);
