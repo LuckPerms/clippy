@@ -136,6 +136,7 @@ module.exports = function (client) {
 
     // If no command found, throw an error
     if (!item) {
+      if (trigger === 'dejoinspam') return;
       await message.channel.send(`Sorry! I do not understand the command \`!${trigger}\`\nType \`!help\` for a list of commands.`);
       return;
     }
