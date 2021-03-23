@@ -1,5 +1,7 @@
 const discord = require('discord.js');
 const axios = require('axios');
+const stringSimilarity = require('string-similarity');
+const config = require('../../config.json');
 
 // Import commands and sort by alphabetical order (for !help command)
 const commands = require('./list.json').sort((a, b) => {
@@ -18,6 +20,7 @@ const splitCommands = (start, end) => {
 const leftList = splitCommands(0, Math.ceil(commands.length / 2));
 const rightList = splitCommands(Math.ceil(commands.length / 2));
 
+const commandNames = commands.reduce((acc, cur) => [ ...acc, cur.name, ...(cur.aliases || []) ], []);
 let metaData = {};
 
 const fetchMetaData = async () => {
@@ -137,7 +140,16 @@ module.exports = function (client) {
     // If no command found, throw an error
     if (!item) {
       if (['bansince', 'checksince', 'kicksince', 'allowjoins'].includes(trigger)) return;
-      await message.channel.send(`Sorry! I do not understand the command \`!${trigger}\`\nType \`!help\` for a list of commands.`);
+
+      // Check if they slightly misspelt a command and give a hint
+      let response = `Sorry! I do not understand the command \`${trigger}\` `;
+      const matches = stringSimilarity.findBestMatch(trigger, commandNames);
+      const bestMatch = matches?.bestMatch;
+      if (bestMatch.rating >= config.similaritySensitivity ?? 0.5) {
+        response += `Did you mean \`${bestMatch.target}\`?`;
+      }
+      response += '\nType `!help` for a list of commands';
+      await message.channel.send(response);
       return;
     }
 
