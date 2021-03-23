@@ -399,6 +399,9 @@
   },
   {
     "name": "cauldron",
+    "aliases": [
+      "thermos"
+    ],
     "title": "Cauldron, Thermos, Forge + Bukkit Hacks",
     "url": "https://luckperms.net/wiki/Installation#cauldron-thermos-etc",
     "description": "Installing LuckPerms on a Cauldron, Thermos and any other Forge + Bukkit server software may require additional steps.",
