@@ -128,14 +128,14 @@ module.exports = function (client) {
     // If no command found, throw an error
     if (!item) {
       // Check if they slightly misspelt a command and give a hint
+      let response = `Sorry! I do not understand the command \`${trigger}\` `;
       const matches = stringSimilarity.findBestMatch(trigger, commandNames);
       const bestMatch = matches?.bestMatch;
       if (bestMatch.rating >= config.similaritySensitivity ?? 0.5) {
-        await message.channel.send(`Did you mean \`!${bestMatch.target}\`?\nType \`!help\` for a list of commands.`);
-        return;
+        response += `Did you mean \`${bestMatch.target}\`?`;
       }
-
-      await message.channel.send(`Sorry! I do not understand the command \`!${trigger}\`\nType \`!help\` for a list of commands.`);
+      response += '\nType `!help` for a list of commands';
+      await message.channel.send(response);
       return;
     }
 
