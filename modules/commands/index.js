@@ -100,8 +100,20 @@ module.exports = function (client) {
       });
 
       sortedLanguages.forEach(({ name, localeTag, progress }) => {
-        const countryCode = localeTag.split('_')[1].toLowerCase();
-        const emoji = localeTag === 'en_PT' ? ':pirate_flag:' : `:flag_${countryCode}:`;
+        let emoji;
+        switch (localeTag) {
+          case 'en_PT':
+            emoji = ':pirate_flag:';
+            break;
+          case 'sr_CS':
+            emoji = ':flag_rs:';
+            break;
+          default:
+            const countryCode = localeTag.split('_')[1].toLowerCase();
+            emoji = `:flag_${countryCode}:`;
+            break;
+        }
+
         rightSideText += `${emoji} **${name}** - \`${progress}%\`\n`;
       });
 
@@ -127,6 +139,8 @@ module.exports = function (client) {
 
     // If no command found, throw an error
     if (!item) {
+      if (['bansince', 'checksince', 'kicksince', 'allowjoins'].includes(trigger)) return;
+
       // Check if they slightly misspelt a command and give a hint
       let response = `Sorry! I do not understand the command \`${trigger}\` `;
       const matches = stringSimilarity.findBestMatch(trigger, commandNames);
