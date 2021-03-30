@@ -1,6 +1,10 @@
 const dateFormat = require('dateformat');
 const fs = require('fs');
 
+fs.mkdir('./logs/', (err) => {
+  if (err) throw err;
+});
+
 const getLogFileName = (date) => 'logs/' + dateFormat(date, 'yyyy-mm-dd') + '.log';
 const getLogFileTime = (date) => dateFormat(date, 'hh-MM-ss TT');
 
