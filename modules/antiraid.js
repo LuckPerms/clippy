@@ -1,6 +1,6 @@
 const fs = require("fs/promises");
 const { MessageEmbed } = require("discord.js");
-const CACHE_PATH = 'joincache.json';
+const CACHE_PATH = './joincache.json';
 
 let joinsList = [];
 let joinsAllowed = true;
