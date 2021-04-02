@@ -145,7 +145,7 @@ module.exports = function (client) {
       let response = `Sorry! I do not understand the command \`${trigger}\` `;
       const matches = stringSimilarity.findBestMatch(trigger, commandNames);
       const bestMatch = matches?.bestMatch;
-      if (bestMatch.rating >= config.similaritySensitivity ?? 0.5) {
+      if (bestMatch.rating >= (config.similaritySensitivity ?? 0.5)) {
         response += `Did you mean \`${bestMatch.target}\`?`;
       }
       response += '\nType `!help` for a list of commands';
