@@ -91,3 +91,7 @@ out/
 modules.xml
 .idea/misc.xml
 *.ipr
+
+### Custom ###
+config.json
+joincache.json
