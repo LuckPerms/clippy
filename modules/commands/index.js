@@ -3,12 +3,61 @@ const axios = require('axios');
 const stringSimilarity = require('string-similarity');
 const config = require('../../config.json');
 
+const TYPO_REACTION = '🔧';
+
 // Import commands and sort by alphabetical order (for !help command)
 const commands = require('./list.json').sort((a, b) => {
   if (a.name < b.name) return -1;
   if (a.name > b.name) return 1;
   return 0;
 });
+
+const findItem = (trigger) => {
+  // Check if command name exists
+  let item = commands.find(command => {
+    return command.name === trigger;
+  });
+
+  // Check for an alias
+  if (!item) {
+    item = commands.find(command => {
+      if (!command.aliases) return;
+      return command.aliases.includes(trigger);
+    });
+  }
+
+  return item;
+}
+
+const buildItemEmbed = (embed, item) => {
+    // Begin formatting the command embed
+    embed
+        .setColor('#94df03')
+        .setDescription(item.description);
+
+    if (item.url) {
+      embed.setURL(item.url);
+    }
+
+    if (item.wiki) {
+      embed
+          .setTitle(`🔖 ${item.title}`)
+          .addField('Read more', item.url)
+          .setFooter('LuckPerms wiki', 'https://luckperms.net/logo.png');
+    } else {
+      embed.setTitle(`${item.title}`);
+
+      if (item.url) {
+        embed.addField('Link', item.url);
+      }
+    }
+
+    if (item.fields) {
+      item.fields.forEach(field => {
+        embed.addField(field.key, field.value, field.inline);
+      });
+    }
+}
 
 // For !help command
 const splitCommands = (start, end) => {
@@ -125,17 +174,7 @@ module.exports = function (client) {
     }
 
     // Check if command name exists
-    let item = commands.find(command => {
-      return command.name === trigger;
-    });
-
-    // Check for an alias
-    if (!item) {
-      item = commands.find(command => {
-        if (!command.aliases) return;
-        return command.aliases.includes(trigger);
-      });
-    }
+    let item = findItem(trigger);
 
     // If no command found, throw an error
     if (!item) {
@@ -145,42 +184,33 @@ module.exports = function (client) {
       let response = `Sorry! I do not understand the command \`${trigger}\` `;
       const matches = stringSimilarity.findBestMatch(trigger, commandNames);
       const bestMatch = matches?.bestMatch;
+      let foundPotentialMatch = false;
       if (bestMatch.rating >= (config.similaritySensitivity ?? 0.5)) {
         response += `Did you mean \`${bestMatch.target}\`?`;
+        foundPotentialMatch = true;
       }
       response += '\nType `!help` for a list of commands';
-      await message.channel.send(response);
+      const botMessage = await message.channel.send(response);
+      if (!foundPotentialMatch) return;
+
+      item = findItem(bestMatch.target);
+      if (!item) return;
+
+      // React to show the the best match, 1 minute timeout.
+      const typoReact = await botMessage.react(TYPO_REACTION);
+      botMessage.awaitReactions(r => r.emoji.name === TYPO_REACTION, { max: 1, time: 60000, errors: ['time'] })
+        .then(async collected => {
+          const reaction = collected.first();
+          if (reaction.emoji.name !== TYPO_REACTION) return;
+
+          buildItemEmbed(embed, item);
+          await botMessage.edit('', { embed });
+        })
+        .catch(async () => await typoReact.remove())
       return;
     }
 
-    // Begin formatting the command embed
-    embed
-        .setColor('#94df03')
-        .setDescription(item.description);
-
-    if (item.url) {
-      embed.setURL(item.url);
-    }
-
-    if (item.wiki) {
-      embed
-          .setTitle(`🔖 ${item.title}`)
-          .addField('Read more', item.url)
-          .setFooter('LuckPerms wiki', 'https://luckperms.net/logo.png');
-    } else {
-      embed.setTitle(`${item.title}`);
-
-      if (item.url) {
-        embed.addField('Link', item.url);
-      }
-    }
-
-    if (item.fields) {
-      item.fields.forEach(field => {
-        embed.addField(field.key, field.value, field.inline);
-      });
-    }
-
+    buildItemEmbed(embed, item);
     await message.channel.send({ embed });
   });
 };
