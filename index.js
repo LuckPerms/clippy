@@ -9,7 +9,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-fs.readdirSync('modules')
+fs.readdirSync(`${__dirname}/modules`)
     .map(mod => {
       console.log("Loading module: " + mod);
       return `./modules/${mod}`;
