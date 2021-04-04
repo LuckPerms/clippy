@@ -1,7 +1,6 @@
 const discord = require('discord.js');
 const axios = require('axios');
 const stringSimilarity = require('string-similarity');
-const config = require('../../config.json');
 
 // Import commands and sort by alphabetical order (for !help command)
 const commands = require('./list.json').sort((a, b) => {
@@ -144,7 +143,7 @@ module.exports = function (client) {
       let response = `Sorry! I do not understand the command \`${trigger}\` `;
       const matches = stringSimilarity.findBestMatch(trigger, commandNames);
       const bestMatch = matches?.bestMatch;
-      if (bestMatch.rating >= (config.similaritySensitivity ?? 0.5)) {
+      if (bestMatch.rating >= (process.env.SIMILARITY_SENSITIVITY ?? 0.5)) {
         response += `Did you mean \`${bestMatch.target}\`?`;
       }
       response += '\nType `!help` for a list of commands';
