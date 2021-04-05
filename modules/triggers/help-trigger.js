@@ -27,18 +27,15 @@ const createHelpTrigger = (triggers) => {
     ]
   });
 
-  return createTrigger(
-    'help',
-    async function action(trigger, message) {
-      try {
-        message.channel.send({ embed: helpResponse });
-      } catch (error) {
-        console.error(error);
-      }
-    },
-    [ 'halp' ],
-    null,
-  );
+  async function action(trigger, message) {
+    try {
+      await message.channel.send({ embed: helpResponse });
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  return createTrigger('help',action,['halp']);
 }
 
 module.exports = createHelpTrigger;

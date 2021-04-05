@@ -1,10 +1,14 @@
+const stringSimilarity = require('string-similarity');
+
 /**
  * @type {Trigger[]}
  */
 const triggers = [ ...require('./get-triggers') ];
 triggers.push(require('./help-trigger')(triggers));
 
-console.log('triggers', triggers);
+const triggerAliases = triggers.reduce((arr, cur) => [ ...arr, ...cur.triggers ], []);
+
+console.log(`Loaded ${triggers.length} triggers with ${triggerAliases.length} aliases`);
 
 module.exports = function (client) {
   client.on('message', async message => {
@@ -20,13 +24,25 @@ module.exports = function (client) {
       return;
     }
 
-    const trigger = triggers.find(t => t.triggers.includes(triggerString));
+    let trigger;
+
+    if (triggerAliases.includes(triggerString)) {
+      trigger = triggers.find(t => t.triggers.includes(triggerString));
+    }
 
     if (!trigger) {
-      console.log(`${triggerString} doesn't exist`);
+      // Check if they slightly misspelt a command and give a hint
+      let response = `Sorry! I do not understand the command \`${triggerString}\` `;
+      const matches = stringSimilarity.findBestMatch(triggerString, triggerAliases);
+      const bestMatch = matches?.bestMatch;
+      if (bestMatch.rating >= (process.env.SIMILARITY_SENSITIVITY ?? 0.5)) {
+        response += `Did you mean \`${bestMatch.target}\`?`;
+      }
+      response += '\nType `!help` for a list of commands';
+      await message.channel.send(response);
       return;
     }
 
-    trigger.action(trigger, message);
+    trigger.action(triggerString, message);
   });
 };
