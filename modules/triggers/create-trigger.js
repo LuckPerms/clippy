@@ -40,10 +40,7 @@ const createTrigger = (
 
   const hasPermissions = message => {
     if (!permissions) return true;
-    for (const perm of permissions) {
-      if (!message.member.hasPermission(perm)) return false;
-    }
-    return true;
+    return permissions.some(perm => message.member.hasPermission(perm));
   };
 
   const action = (trigger, message) => {
