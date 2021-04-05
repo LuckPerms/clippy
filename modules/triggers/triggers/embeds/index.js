@@ -8,7 +8,7 @@ const aliases = embeds.reduce(
 );
 const addToHelpList = embeds.map(({ name }) => name);
 
-async function action(trigger, message) {
+async function runner(trigger, message) {
   if (!aliases.includes(trigger)) {
     return;
   }
@@ -56,7 +56,7 @@ async function action(trigger, message) {
 
 const embedsTrigger = createTrigger(
   'embeds',
-  action,
+  runner,
   aliases,
   null,
   addToHelpList

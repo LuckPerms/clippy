@@ -3,8 +3,8 @@
  * @property {string} name - name of the trigger
  * @property {string[]} aliases - alternative triggers
  * @property {?string[]} triggers - combined array of name + aliases
- * @property {function} action - what to do when the trigger is fired
- * @property {?string} permission - the permission
+ * @property {function} runner - what to do when the trigger is fired
+ * @property {?string[]} permissions - the permission(s) require to execute the trigger.
  * @property {?string[]} helpList - array of triggers to add to the help list
  */
 

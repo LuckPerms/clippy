@@ -30,7 +30,7 @@ const createHelpTrigger = triggers => {
     ],
   });
 
-  async function action(trigger, message) {
+  async function runner(trigger, message) {
     try {
       await message.channel.send({ embed: helpResponse });
     } catch (error) {
@@ -38,7 +38,7 @@ const createHelpTrigger = triggers => {
     }
   }
 
-  return createTrigger('help', action, ['halp']);
+  return createTrigger('help', runner, ['halp']);
 };
 
 module.exports = createHelpTrigger;
