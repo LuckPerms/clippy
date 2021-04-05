@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const createTrigger = require('../create-trigger');
 const metaData = require('../../../meta-data');
 
-async function action(trigger, message) {
+async function runner(trigger, message) {
   const embed = new MessageEmbed({
     title: 'Latest version',
     color: '#94df03',
@@ -16,6 +16,6 @@ async function action(trigger, message) {
   }
 }
 
-const versionTrigger = createTrigger('version', action, ['latest']);
+const versionTrigger = createTrigger('version', runner, ['latest']);
 
 module.exports = versionTrigger;

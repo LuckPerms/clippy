@@ -66,7 +66,7 @@ setTimeout(() => {
   }, /* 1 minute */ 60 * 1000);
 }, /* 5 seconds */ 5 * 1000);
 
-async function action(trigger, message) {
+async function runner(trigger, message) {
   try {
     await message.channel.send({ embed });
   } catch (error) {
@@ -76,7 +76,7 @@ async function action(trigger, message) {
 
 const translationProgressTrigger = createTrigger(
   'translationprogress',
-  action,
+  runner,
   ['tprogress']
 );
 
