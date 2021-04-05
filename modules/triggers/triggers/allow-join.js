@@ -36,6 +36,6 @@ async function runner(trigger, message) {
   );
 }
 
-const allowJoinTrigger = createTrigger('allowjoin', runner, []);
+const allowJoinTrigger = createTrigger('allowjoin', runner, [], null, []);
 
 module.exports = allowJoinTrigger;

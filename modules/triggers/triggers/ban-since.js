@@ -104,7 +104,8 @@ const banSinceTrigger = createTrigger(
   'bansince',
   runner,
   ['kicksince', 'checksince'],
-  ['BAN_MEMBERS']
+  ['BAN_MEMBERS'],
+  []
 );
 
 module.exports = banSinceTrigger;
