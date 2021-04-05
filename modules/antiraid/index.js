@@ -7,8 +7,6 @@ const {
   getCachePath,
 } = require('./manager');
 
-console.log('ready');
-
 module.exports = client => {
   client.once('ready', async () => {
     // Ensure there is a valid joins cache
