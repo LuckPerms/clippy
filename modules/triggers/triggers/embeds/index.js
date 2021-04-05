@@ -53,12 +53,6 @@ async function action(trigger, message) {
   await message.channel.send({ embed });
 }
 
-const embedsTrigger = createTrigger(
-  'embeds',
-  action,
-  aliases,
-  null,
-  addToHelpList
-);
+const embedsTrigger = createTrigger('embeds',action,aliases,null,addToHelpList);
 
 module.exports = embedsTrigger;

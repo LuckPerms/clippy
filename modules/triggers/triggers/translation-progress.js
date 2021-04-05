@@ -66,16 +66,14 @@ setTimeout(() => {
   }, /* 1 minute */60 * 1000);
 }, /* 5 seconds */5 * 1000);
 
-const translationProgressTrigger = createTrigger(
-  'translationprogress',
-  async function action(trigger, message) {
-    try {
-      await message.channel.send({ embed });
-    } catch (error) {
-      console.error(error);
-    }
-  },
-  ['tprogress'],
-);
+async function action(trigger, message) {
+  try {
+    await message.channel.send({ embed });
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+const translationProgressTrigger = createTrigger('translationprogress',action,['tprogress']);
 
 module.exports = translationProgressTrigger;
