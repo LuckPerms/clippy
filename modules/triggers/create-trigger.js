@@ -11,39 +11,52 @@
 /**
  * Creates and returns a new Trigger
  * @param {string} name
- * @param {function} action
+ * @param {function} runner
  * @param {string[]} [aliases]
- * @param {string|null} [permission=null]
+ * @param {string[]|null} [permissions=null]
  * @param {?string[]|null} [addToHelpList]
  * @returns {Trigger}
  */
 const createTrigger = (
   name,
-  action,
+  runner,
   aliases,
-  permission = null,
+  permissions = null,
   addToHelpList
 ) => {
   if (!name) {
     throw new Error('A name is required for triggers');
   }
 
-  if (action === undefined) {
+  if (runner === undefined) {
     throw new Error(`Trigger "${name}" action must have an action`);
   }
 
-  if (typeof action !== 'function') {
+  if (typeof runner !== 'function') {
     throw new Error(`Trigger "${name}" action must be a function`);
   }
 
   const triggers = [name, ...aliases];
+
+  const hasPermissions = message => {
+    if (!permissions) return true;
+    for (const perm of permissions) {
+      if (!message.member.hasPermission(perm)) return false;
+    }
+    return true;
+  };
+
+  const action = (trigger, message) => {
+    if (!hasPermissions(message)) return;
+    runner(trigger, message);
+  };
 
   return {
     name,
     aliases,
     triggers,
     action,
-    permission,
+    permissions,
     helpList: addToHelpList || [name],
   };
 };
