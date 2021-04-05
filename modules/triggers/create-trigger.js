@@ -22,14 +22,14 @@ const createTrigger = (
   action,
   aliases,
   permission = null,
-  addToHelpList,
+  addToHelpList
 ) => {
   if (!name) {
     throw new Error('A name is required for triggers');
   }
 
   if (action === undefined) {
-    throw new Error(`Trigger "${name}" action must have an action`)
+    throw new Error(`Trigger "${name}" action must have an action`);
   }
 
   if (typeof action !== 'function') {
@@ -44,7 +44,7 @@ const createTrigger = (
     triggers,
     action,
     permission,
-    helpList: addToHelpList || [ name ],
+    helpList: addToHelpList || [name],
   };
 };
 

@@ -6,8 +6,9 @@ async function action(trigger, message) {
   const embed = new MessageEmbed({
     title: 'Latest version',
     color: '#94df03',
-    description: metaData().version
+    description: metaData().version,
   });
+
   try {
     await message.channel.send({ embed });
   } catch (error) {
@@ -15,6 +16,6 @@ async function action(trigger, message) {
   }
 }
 
-const versionTrigger = createTrigger('version', action,['latest']);
+const versionTrigger = createTrigger('version', action, ['latest']);
 
 module.exports = versionTrigger;

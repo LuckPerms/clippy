@@ -1,8 +1,11 @@
 const { MessageEmbed } = require('discord.js');
 const createTrigger = require('./create-trigger');
 
-const createHelpTrigger = (triggers) => {
-  const list = triggers.reduce((array, current) => [ ...array, ...current.helpList], []).sort();
+const createHelpTrigger = triggers => {
+  const list = triggers
+    .reduce((array, current) => [...array, ...current.helpList], [])
+    .sort();
+
   const listHalf = Math.ceil(list.length / 2);
 
   const listReducer = (prev, command) => `${prev}\`!${command}\`\n`;
@@ -24,7 +27,7 @@ const createHelpTrigger = (triggers) => {
         value: rightList,
         inline: true,
       },
-    ]
+    ],
   });
 
   async function action(trigger, message) {
@@ -35,7 +38,7 @@ const createHelpTrigger = (triggers) => {
     }
   }
 
-  return createTrigger('help',action,['halp']);
-}
+  return createTrigger('help', action, ['halp']);
+};
 
 module.exports = createHelpTrigger;

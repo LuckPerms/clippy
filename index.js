@@ -9,11 +9,10 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-const modules = fs.readdirSync(`${__dirname}/modules`)
-  .map(module => {
-    console.log(`Loading module: ${module}`);
-    return require(`./modules/${module}`);
-  });
+const modules = fs.readdirSync(`${__dirname}/modules`).map(module => {
+  console.log(`Loading module: ${module}`);
+  return require(`./modules/${module}`);
+});
 
 modules.forEach(module => module(client));
 

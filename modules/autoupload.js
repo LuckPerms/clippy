@@ -15,15 +15,21 @@ module.exports = client => {
       if (attachment.name.endsWith('.log')) {
         contentType = 'text/log';
       }
+
       try {
         let content = await axios.get(attachment.url);
         let response = await axios.post(`${bytebin}/post`, content.data, {
-          headers: {'Content-Type': contentType}
+          headers: { 'Content-Type': contentType },
         });
-        await message.channel.send(`Please use <${paste}> to send files in the future. I have automatically uploaded \`${attachment.name}\` for you: ${paste}/${response.data.key}`);
+
+        await message.channel.send(
+          `Please use <${paste}> to send files in the future. I have automatically uploaded \`${attachment.name}\` for you: ${paste}/${response.data.key}`
+        );
       } catch (e) {
-        await message.channel.send(`Your file could not be automatically uploaded. Please use ${paste} to share files.`)
+        await message.channel.send(
+          `Your file could not be automatically uploaded. Please use ${paste} to share files.`
+        );
       }
     }
-  })
-}
+  });
+};

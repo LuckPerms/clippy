@@ -16,7 +16,7 @@ const setEmbed = () => {
   });
   const listHalf = Math.ceil(list.length / 2);
 
-  const formatFlag = (localeTag) => {
+  const formatFlag = localeTag => {
     switch (localeTag) {
       case 'en_PT':
         return ':pirate_flag:';
@@ -26,7 +26,7 @@ const setEmbed = () => {
         const countryCode = localeTag.split('_')[1].toLowerCase();
         return `:flag_${countryCode}:`;
     }
-  }
+  };
 
   const listReducer = (prev, language) => {
     const { name, localeTag, progress } = language;
@@ -52,9 +52,9 @@ const setEmbed = () => {
         value: rightList,
         inline: true,
       },
-    ]
+    ],
   });
-}
+};
 
 // Offset the first setEmbed by a few seconds to give metaData a chance to populate...
 setTimeout(() => {
@@ -63,8 +63,8 @@ setTimeout(() => {
   // ... then update the embed every minute
   setInterval(() => {
     setEmbed();
-  }, /* 1 minute */60 * 1000);
-}, /* 5 seconds */5 * 1000);
+  }, /* 1 minute */ 60 * 1000);
+}, /* 5 seconds */ 5 * 1000);
 
 async function action(trigger, message) {
   try {
@@ -74,6 +74,10 @@ async function action(trigger, message) {
   }
 }
 
-const translationProgressTrigger = createTrigger('translationprogress',action,['tprogress']);
+const translationProgressTrigger = createTrigger(
+  'translationprogress',
+  action,
+  ['tprogress']
+);
 
 module.exports = translationProgressTrigger;
