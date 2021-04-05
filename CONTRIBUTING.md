@@ -27,7 +27,7 @@ Copy the contents of `.env.example` to `.env`
 
 Open `.env` and input the necessary environment variables:
 
-```dotenv
+```properties
 # Token of the Discord bot to use for this application
 DISCORD_BOT_TOKEN =
 
