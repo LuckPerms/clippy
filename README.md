@@ -5,4 +5,4 @@ clippy is our small Office Assistant:tm: bot used on the [LuckPerms Discord](htt
 
 ## Contributions
 
-If you would like to help with development on Clippy then please read [CONTRIBUTING.md(https://github.com/LuckPerms/clippy/blob/master/CONTRIBUTING.md)]
+If you would like to help with development on Clippy then please read [CONTRIBUTING.md](https://github.com/LuckPerms/clippy/blob/master/CONTRIBUTING.md)
