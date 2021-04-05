@@ -60,7 +60,7 @@ module.exports = function (client) {
       }
 
       response += '\nType `!help` for a list of commands';
-      const botMessage = message.channel.send(response);
+      const botMessage = await message.channel.send(response);
 
       if (!foundPotentialMatch) return;
 
