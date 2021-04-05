@@ -1,9 +1,10 @@
 const axios = require('axios');
-const config = require('../config.json');
-const data = require('../data.json');
 
-async function update(client) { 
-  const donorsInfo = await axios.get('https://metadata.luckperms.net/data/donors');
+async function update(client) {
+  const donorsInfo = await axios.get(
+    'https://metadata.luckperms.net/data/donors'
+  );
+
   const donors = donorsInfo.data.donors;
   const donorNames = [];
   for (const donor of donors) {
@@ -16,16 +17,20 @@ async function update(client) {
     }
     donorNames.push(name);
   }
-  donorNames.sort((a, b) => a.localeCompare(b, undefined, {sensitivity: 'base'}));
 
-  let text = "🖼️ **Hall of Fame** 🖼️\n\nSpecial thanks goes to the following people for their kind donations and/or support of the project on Patreon.\n(this list is those who have pledged $5 or more & have made their pledges publicly visible in their Patreon profile)\n\n";
+  donorNames.sort((a, b) =>
+    a.localeCompare(b, undefined, { sensitivity: 'base' })
+  );
+
+  let text =
+    '🖼️ **Hall of Fame** 🖼️\n\nSpecial thanks goes to the following people for their kind donations and/or support of the project on Patreon.\n(this list is those who have pledged $5 or more & have made their pledges publicly visible in their Patreon profile)\n\n';
   for (const name of donorNames) {
-    text += "⇒ " + name + "\n";
+    text += '⇒ ' + name + '\n';
   }
 
-  const guild = await client.guilds.fetch(config.guild);
-  const channel = guild.channels.resolve(data.patreon_channel);
-  const messages = await channel.messages.fetch({limit: 10});
+  const guild = await client.guilds.fetch(process.env.DISCORD_GUILD);
+  const channel = guild.channels.resolve(process.env.DISCORD_PATREON_CHANNEL);
+  const messages = await channel.messages.fetch({ limit: 10 });
 
   for (const message of messages.values()) {
     if (message.author.bot) {
@@ -36,7 +41,7 @@ async function update(client) {
   await channel.send(text);
 }
 
-module.exports = (client) => {
+module.exports = client => {
   client.once('ready', async () => {
     await update(client);
     setInterval(async () => {

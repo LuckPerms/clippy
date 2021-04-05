@@ -1,19 +1,18 @@
 {
   "name": "clippy_2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": ">14"
   },
-  "author": "",
+  "scripts": {
+    "start": "node index.js"
+  },
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
     "dateformat": "^3.0.3",
     "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0",
     "mime-types": "^2.1.27",
-    "mz": "^2.7.0",
     "string-similarity": "^4.0.4"
   }
 }
