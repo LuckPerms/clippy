@@ -1,4 +1,4 @@
-const data = require('../data.json');
+const STAFF_ROLES = process.env.DISCORD_STAFF_ROLES.split(',');
 
 module.exports = (client) => {
   client.on('message', async msg => {
@@ -7,14 +7,14 @@ module.exports = (client) => {
     if (msg.mentions.members.size === 0) return;
     if (msg.reference !== null) return;
 
-    const senderIsStaff = msg.member.roles.cache.some(role => data.staff_roles.indexOf(role.name) !== -1);
+    const senderIsStaff = msg.member.roles.cache.some(role => STAFF_ROLES.indexOf(role.name) !== -1);
     if (senderIsStaff) {
       return;
     }
 
     const mentionsStaff = msg.mentions.members.some(member => {
       // If the message mentions any members that satisfy the following:
-      return member.roles.cache.some(role => data.staff_roles.indexOf(role.name) !== -1);
+      return member.roles.cache.some(role => STAFF_ROLES.indexOf(role.name) !== -1);
     });
 
     if (mentionsStaff) {

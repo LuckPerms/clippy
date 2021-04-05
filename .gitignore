@@ -93,5 +93,4 @@ modules.xml
 *.ipr
 
 ### Custom ###
-config.json
 joincache.json
