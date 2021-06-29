@@ -621,5 +621,27 @@
     ],
     "title": "Running a network and getting UUID mismatches?",
     "description": "Please double check that:\n`1.` BungeeCord `config.yml` has `ip_forward` **and** `online_mode` set to **`true`**\n`2.` *All* backend servers' `spigot.yml` has `bungeecord` set to **`true`**\n`3.` *All* backend servers' `server.properties` have `online-mode` set to **`false`**"
+  },
+  {
+    "name": "hack",
+    "aliases": [
+      "hacked", "exploited", "exploit"
+    ],
+    "title": "Has LuckPerms been exploited/hacked?",
+    "description": "Most certainly: **no**. In most cases a 'LuckPerms exploit' is a simple case of human error, which can be avoided easily.",
+    "fields": [
+      {
+        "key": "Don't give random people full ( * ) permissions / admin permissions",
+        "value": "While this should be obvious, a lot of times a exploit can be traced back to faulty permission settings. You should always take your time with permissions and **read the plugins docs**. In 99% of all cases, the plugins have documentations, explaining each permission. If the plugin you are using does not have documentations, you could still\n **A:** Ask the plugin developer\n **B:** Use LuckPerms Verbose feature\n **C:** Select a different plugin with proper documentation."
+      },
+      {
+        "key": "Do not run your server/network in offline mode",
+        "value": "Running your server or network in offline mode, hackers have it really easy to steal your, or any other admins identity. While the server is in offline mode, certain checks ( **which exist to prevent exactly this** ), are being skipped, and the server does not verify if the person joining actually is the person they claim to be."
+      },
+      {
+        "key": "Do not download plugins from shady websites / sent by friends",
+        "value": "You should never put anything on your server which has not been downloaded by yourself from official sources. Plugins can be infected with malware which injects itself into all other plugins, and thus is hard to remove. While it may look like a plugin has been hacked, you most certainly downloaded a modified version of it. In case your server has been infected by such malware:\n 1. Stop the server\n 2. Delete all plugins in your plugins folder, and just to be safe also the server jar file\n 3. Re-Download all plugins and server jar files **from official websites** such as SpigotMC or official plugin websites ( luckperms.net for example ).\n 4. Check if there have been any modifications to the permission system and remove unknown users and wrong permissions.\nif you follow these steps you should have a clean server by the end, without exploits."
+      }
+    ]
   }
 ]
