@@ -624,8 +624,8 @@
   },
   {
     "name": "tutorial",
-    "aliases": ["yttut", "tut"],
-    "title": "Youtube Tutorial",
-    "description": "If you are wanting a video tutorial for \nsetting up luckperms for the first time go to:\n https://www.youtube.com/watch?v=l4anE2wOLdc"
+    "aliases": ["tut", "yt"],
+    "title": "YouTube Tutorial",
+    "description": "If you would like a video tutorial for setting up LuckPerms, try:\nhttps://www.youtube.com/watch?v=l4anE2wOLdc"
   }
 ]
