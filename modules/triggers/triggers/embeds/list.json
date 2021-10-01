@@ -10,6 +10,13 @@
     "wiki": true
   },
   {
+    "name": "search",
+    "title": "Searching for Settings",
+    "url": "https://www.computerhope.com/jargon/c/ctrl-f.htm",
+    "description": "You can easily find a setting in long config files by using 'Ctrl+ F' on your keyboard and using the search box.",
+    "wiki": true
+  },
+  {
     "name": "install",
     "title": "Installing LuckPerms",
     "url": "https://luckperms.net/wiki/Installation",
