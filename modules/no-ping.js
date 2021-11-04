@@ -2,10 +2,11 @@ const STAFF_ROLES = process.env.DISCORD_STAFF_ROLES.split(',');
 
 module.exports = client => {
   client.on('message', async msg => {
-    // Ignore DMs, messages that don't mention anyone, and messages that are a reply.
+    // Ignore DMs, messages that don't mention anyone, messages that are a reply, and messages from bots.
     if (msg.channel.type !== 'text') return;
     if (msg.mentions.members.size === 0) return;
     if (msg.reference !== null) return;
+    if (msg.member.user.bot) return;
 
     const senderIsStaff = msg.member.roles.cache.some(
       role => STAFF_ROLES.indexOf(role.name) !== -1
