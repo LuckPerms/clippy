@@ -649,5 +649,11 @@
         "value": "You should never put anything on your server which has not been downloaded by yourself from official sources. Plugins can be infected with malware which injects itself into all other plugins, and thus is hard to remove. While it may look like a plugin has been hacked, you most certainly downloaded a modified version of it and **it is not the plugin authors fault**. In case your server has been infected by such malware:\n 1. Stop the server\n 2. Delete all plugins in your plugins folder, and just to be safe also the server jar file\n 3. Re-Download all plugins and server jar files **from official websites** such as SpigotMC or official plugin websites ( luckperms.net for example ).\n 4. Check if there have been any modifications to the permission system and remove unknown users and wrong permissions.\nif you follow these steps you should have a clean server by the end, without exploits."
       }
     ]
+  },
+    {
+    "name": "offline",
+    "aliases": ["cracked"],
+    "title": "Offline mode/cracked servers",
+    "description": "Running a Minecraft server in offline mode can cause a lot of issues, particularly with UUIDs and security vulnerabilities. Some people also view it as unethical (piracy). We understand that some people need to run their servers in offline mode. However, due to the reasons mentioned, some users will choose to not support those running a server in offline mode (this does not apply to those running in a Bungeecord network). Please respect their decision, you may continue to seek help for your issue but in most cases, it can be resolved by setting online-mode=true in server.properties."
   }
 ]
