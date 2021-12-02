@@ -650,7 +650,7 @@
       }
     ]
   },
-    {
+  {
     "name": "offline",
     "aliases": ["cracked"],
     "title": "Offline mode/cracked servers",
