@@ -3,7 +3,7 @@ FROM node:lts-alpine
 # setup
 RUN addgroup -S app && adduser -S -G app app
 USER app
-WORKDIR /app
+WORKDIR /opt/clippy
 
 # install dependencies
 COPY package.json package-lock.json ./
@@ -14,7 +14,7 @@ COPY index.js meta-data.js ./
 COPY modules/ ./modules/
 
 RUN mkdir data logs
-VOLUME [ "/data", "/logs" ]
+VOLUME ["/opt/clippy/data", "/opt/clippy/logs"]
 
 # run
 ENV NODE_ENV=production
