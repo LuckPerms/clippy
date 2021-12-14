@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  clippy:
+    image: ghcr.io/luckperms/clippy
+    environment:
+      DISCORD_BOT_TOKEN: example
+      DISCORD_STAFF_ROLES: example
+      DISCORD_GUILD: example
+      DISCORD_PATREON_CHANNEL: example
+      DISCORD_MEMBER_ROLE: example

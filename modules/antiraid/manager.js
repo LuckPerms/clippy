@@ -1,5 +1,5 @@
 const fs = require('fs/promises');
-const CACHE_PATH = './joincache.json';
+const CACHE_PATH = './data/joincache.json';
 
 let joinsList = [];
 let joinsAllowed = true;

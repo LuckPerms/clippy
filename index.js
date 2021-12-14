@@ -22,3 +22,27 @@ client
   .login(process.env.DISCORD_BOT_TOKEN)
   .then(() => console.log('✅ Ready'))
   .catch(console.error);
+
+registerShutdownHooks(client);
+
+function registerShutdownHooks(client) {
+  const signals = {
+    SIGHUP: 1,
+    SIGINT: 2,
+    SIGTERM: 15,
+  };
+
+  function shutdown(signal, value) {
+    console.log('Shutting down...');
+    client.destroy();
+    console.log(`Client stopped by ${signal} with value ${value}`);
+    process.exit(128 + value);
+  }
+
+  Object.keys(signals).forEach(signal => {
+    process.on(signal, () => {
+      console.log(`Process received a ${signal} signal`);
+      shutdown(signal, signals[signal]);
+    });
+  });
+}
