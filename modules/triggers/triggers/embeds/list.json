@@ -461,7 +461,7 @@
     "fields": [
       {
         "key": "For Console Errors:",
-        "value": "https://paste.lucko.me/"
+        "value": "https://pastes.dev/"
       }
     ]
   },
@@ -503,7 +503,7 @@
       "paste", "pastebin"
     ],
     "title": "Please use pastebin!",
-    "description": "Seeing a paste of the problem makes everything so much easier! Use https://paste.lucko.me/ for easy pasting!",
+    "description": "Seeing a paste of the problem makes everything so much easier! Use https://pastes.dev/ for easy pasting!",
     "fields": [
       {
         "key": "For console errors:",

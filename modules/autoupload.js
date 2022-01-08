@@ -3,7 +3,7 @@ const axios = require('axios');
 
 const contentTypes = ['application/json', 'text/plain', 'text/yaml'];
 const bytebin = 'https://bytebin.lucko.me';
-const paste = 'https://paste.lucko.me';
+const paste = 'https://pastes.dev';
 
 module.exports = client => {
   client.on('message', async message => {
