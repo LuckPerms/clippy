@@ -493,7 +493,7 @@
       },
       {
         "key": "For database errors:",
-        "value": "Server console: `/lp info` | Bungee console: `/lpb info`. | Velocity console: `/lpv info`"
+        "value": "Server console: `/lp info` | Bungee console: `/lpb info` | Velocity console: `/lpv info`"
       }
     ]
   },
