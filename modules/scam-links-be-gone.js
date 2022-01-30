@@ -30,8 +30,8 @@ const legit = [
 module.exports = (client) => {
   client.on('message', async (msg) => {
     if (msg.channel.type !== 'text') return;
+    if (!msg.content || !msg.member) return;
     if (msg.member.user.bot) return;
-    if (!msg.content) return;
 
     let badDomain;
     const matches = msg.content.matchAll(/https?:\/\/((?:(?:d+[i1l]+[csz]+)|(?:s+[t]+[er]+))[\w.-]+)/gm);
