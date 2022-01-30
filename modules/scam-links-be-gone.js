@@ -44,9 +44,9 @@ module.exports = (client) => {
     }
 
     if (badDomain) {
-      await message.delete();
+      await msg.delete();
 
-      const channel = message.guild.channels.resolve(process.env.DISCORD_PUNISHMENTS_CHANNEL);
+      const channel = msg.guild.channels.resolve(process.env.DISCORD_PUNISHMENTS_CHANNEL);
       await channel.send(`Deleted message from ${msg.author.username} (${msg.author.id}) containing likely scam link \`${badDomain}\``);
     }
   });
