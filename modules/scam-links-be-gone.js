@@ -28,7 +28,7 @@ const legit = [
 ]
 
 module.exports = (client) => {
-  client.on('message', async (message) => {
+  client.on('message', async (msg) => {
     if (msg.channel.type !== 'text') return;
     if (msg.member.user.bot) return;
     if (!msg.content) return;
