@@ -37,7 +37,7 @@ module.exports = (client) => {
     const matches = msg.content.matchAll(/https?:\/\/((?:(?:d+[i1l]+[csz]+)|(?:s+[t]+[er]+))[\w.-]+)/gm);
     for (const match of matches) {
       const domain = match[1];
-      if (!legit.has(domain)) {
+      if (!legit.includes(domain)) {
         badDomain = domain;
         break;
       }
@@ -45,7 +45,7 @@ module.exports = (client) => {
 
     if (badDomain) {
       await message.delete();
-      
+
       const channel = message.guild.channels.resolve(process.env.DISCORD_PUNISHMENTS_CHANNEL);
       await channel.send(`Deleted message from ${msg.author.username} (${msg.author.id}) containing likely scam link \`${badDomain}\``);
     }
