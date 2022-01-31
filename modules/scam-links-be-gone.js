@@ -1,4 +1,4 @@
-const regex = /https?:\/\/((?:(?:d+[i1l]+[csz]+)|(?:s+[t]+[er]+))[\w.-]+)/gm;
+const regex = /https?:\/\/((?:(?:d+[ij1l]+[csz]+)|(?:s+[t]+[er]+))[\w.-]+)/gm;
 
 const legit = [
   'dis.gd',
