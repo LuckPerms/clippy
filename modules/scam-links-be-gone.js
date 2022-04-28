@@ -27,6 +27,7 @@ const legit = [
   'steamgames.com',
   'steampowered.com',
   'discordcdn.com',
+  'discordsrv.com',
 ];
 
 let lastTag = {
