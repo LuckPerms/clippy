@@ -570,6 +570,21 @@
     ]
   },
   {
+    "name": "wrongformatting",
+    "title": "Having issues with your chat format?",
+    "description": "LuckPerms does not perform any chat formatting on its own. If your prefixes are not showing up in chat or the tablist as you expect, check the config for those plugins",
+    "fields": [
+      {
+        "key": "Using TAB?",
+        "value": "TAB uses prefixes from its own configuration by default. Check out the [TAB wiki](https://github.com/NEZNAMY/TAB/wiki/Mini-guides-collection#taking-prefixessuffixes-from-permission-plugin) on using prefixes from a permissions plugin."
+      },
+      {
+        "key": "Double prefixes?",
+        "value": "If you are using EssX and EssXChat and you are getting double prefixes in chat, make sure you **do not** have the prefix in both your chat format *and* display name format!"
+      }
+    ]
+  },
+  {
     "name": "nowildcard",
     "aliases": [
       "nwc"
@@ -655,5 +670,11 @@
     "aliases": ["cracked"],
     "title": "Offline mode/cracked servers",
     "description": "Running a Minecraft server in offline mode can cause a lot of issues, particularly with UUIDs and security vulnerabilities. Some people also view it as unethical (piracy). We understand that some people need to run their servers in offline mode. However, due to the reasons mentioned, some users will choose to not support those running a server in offline mode (this does not apply to those running in a Bungeecord network). Please respect their decision, you may continue to seek help for your issue but in most cases, it can be resolved by setting online-mode=true in server.properties."
+  },
+  {
+    "name": "bedrock",
+    "aliases": ["geyser"],
+    "title": "Using Geyser?",
+    "description": "If you're having issues with permissions for bedrock players, try setting `allow-invalid-usernames` to true in the LuckPerms config."
   }
 ]
