@@ -374,7 +374,7 @@
     ],
     "title": "Downloads",
     "url": "https://luckperms.net/download",
-    "description": "You can download LuckPerms for Bukkit/Spigot/Paper, BungeeCord, Sponge, Fabric, Nukkit and Velocity.",
+    "description": "You can download LuckPerms for Bukkit/Spigot/Paper, BungeeCord, Sponge, Fabric, Forge, Nukkit and Velocity.",
     "fields": [
       {
         "key": "Additional downloads",
@@ -655,5 +655,51 @@
     "aliases": ["cracked"],
     "title": "Offline mode/cracked servers",
     "description": "Running a Minecraft server in offline mode can cause a lot of issues, particularly with UUIDs and security vulnerabilities. Some people also view it as unethical (piracy). We understand that some people need to run their servers in offline mode. However, due to the reasons mentioned, some users will choose to not support those running a server in offline mode (this does not apply to those running in a Bungeecord network). Please respect their decision, you may continue to seek help for your issue but in most cases, it can be resolved by setting online-mode=true in server.properties."
+  },
+  {
+    "name": "bedrock",
+    "aliases": ["geyser"],
+    "title": "Using Geyser?",
+    "description": "If you're having issues with permissions for bedrock players, or it's telling you that a bedrock player's name is invalid, try setting `allow-invalid-usernames` to true in the LuckPerms config."
+  },
+  {
+    "name": "reload",
+    "aliases": ["plugman"],
+    "title": "Using `/reload` or plugman?",
+    "description": "Using Bukkit's `/reload` command causes issues with many plugins, including LuckPerms. If you are adding or removing plugins, you should always fully restart your server.",
+    "fields": [
+      {
+        "key": "Read more:",
+        "value": "https://madelinemiller.dev/blog/problem-with-reload/"
+      },
+      {
+        "key": "What about plugman?",
+        "value": "Plugman causes all of the same issues as /reload as it is fundamentally doing the same thing as `/reload`"
+      }
+    ]
+  },
+  {
+    "name": "forgepermissions",
+    "aliases": ["forgeperms"],
+    "title": "Why not make LuckPerms work on older versions of Forge?",
+    "description": "Forge added the Permissions API only recently in 1.18. That API is what allowed a native Forge version of LuckPerms to be made, however that API does not currently exist on older versions of Forge, and is unlikely to be backported. Without the Permissions API existing on older versions of Forge, it is impossible to make LuckPerms work on those versions of Forge natively.",
+    "fields": [
+      {
+        "key": "Is there any other option?",
+        "value": "There is a Sponge version of LuckPerms! You can add SpongeForge and the Sponge version of LuckPerms to use LuckPerms on older Forge versions."
+      }
+    ]
+  },
+  {
+    "name": "spongeseven",
+    "alias": ["sponge7", "api7"],
+    "title": "Using Sponge on 1.12.2?",
+    "description": "LuckPerms no longer releases updates for API 7 of Sponge, which is what the 1.12.2 version of Sponge uses. However you can still download the last version of LuckPerms that supported API 7 from Ore.",
+    "fields": [
+      {
+        "key": "Ore Download Page:",
+        "value": "https://ore.spongepowered.org/Luck/LuckPerms/versions/5.3.98"
+      }
+    ]
   }
 ]
