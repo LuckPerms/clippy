@@ -692,7 +692,7 @@
   },
   {
     "name": "spongeseven",
-    "alias": ["sponge7", "api7"],
+    "aliases": ["sponge7", "api7"],
     "title": "Using Sponge on 1.12.2?",
     "description": "LuckPerms no longer releases updates for API 7 of Sponge, which is what the 1.12.2 version of Sponge uses. However you can still download the last version of LuckPerms that supported API 7 from Ore.",
     "fields": [
