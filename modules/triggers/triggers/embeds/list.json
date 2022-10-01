@@ -628,7 +628,7 @@
       "checkvelocity"
     ],
     "title": "Running a network and getting UUID mismatches?",
-    "description": "Please double check that:\n`1.` Velocity `velocity.toml` has `player-info-forwarding-mode` set to **`\"modern\"`** **and** `online_mode` set to **`true`**\n`2.` *All* backend servers' `server.properties` have `online-mode` set to **`false`**"
+    "description": "Please double check that:\n`1.` Velocity `velocity.toml` has `player-info-forwarding-mode` set to **`\"modern\"`** **and** `online_mode` set to **`true`**\n`2.` *All* backend servers' `server.properties` have `online-mode` set to **`false`** **and** `spigot.yml` have `bungeecord` set to **`false`**\n For more information visit: `https://docs.papermc.io/velocity/player-information-forwarding#configuring-modern-forwarding-for-paper`"
   },  
   {
     "name": "tutorial",
