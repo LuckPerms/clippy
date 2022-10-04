@@ -680,7 +680,7 @@
   },
   {
     "name": "forgepermissions",
-    "aliases": ["forgeperms"],
+    "aliases": ["forgeperms", "forge"],
     "title": "Why not make LuckPerms work on older versions of Forge?",
     "description": "Forge added the Permissions API only recently in 1.18. That API is what allowed a native Forge version of LuckPerms to be made, however that API does not currently exist on older versions of Forge, and is unlikely to be backported. Without the Permissions API existing on older versions of Forge, it is impossible to make LuckPerms work on those versions of Forge natively.",
     "fields": [
