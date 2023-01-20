@@ -26,6 +26,7 @@ const legit = [
   'steamcommunity.com',
   'steamgames.com',
   'steampowered.com',
+  'streamable.com',
   'discordcdn.com',
   'discordsrv.com',
 ];
