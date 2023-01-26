@@ -193,6 +193,9 @@
   },
   {
     "name": "migration",
+    "aliases": [
+      "migrate"
+    ],
     "title": "Migration",
     "url": "https://luckperms.net/wiki/Migration",
     "description": "Learn about the process of migrating from another permission plugin.",
