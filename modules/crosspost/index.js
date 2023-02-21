@@ -9,6 +9,9 @@ module.exports = function (client) {
         // Ensure we have crosspost checks enabled for this channel before doing anything
         if (!store.channelEnabled(message.channel)) return;
 
+        // Check to make sure the message is longer than 50 characters so that small messages like ok or thanks don't get caught
+        if (message.content.length < 50) return;
+
         // Check if the user has already recently posted a very similar message
         let previousMessage = store.findMatch(message);
 
