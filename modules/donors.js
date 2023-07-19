@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function update(client) {
   try {
-    await update(client);
+    await doUpdate(client);
   } catch (e) {
     console.error('error while updating donors', e);
   }
