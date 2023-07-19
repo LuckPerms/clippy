@@ -1,6 +1,14 @@
 const axios = require('axios');
 
 async function update(client) {
+  try {
+    await update(client);
+  } catch (e) {
+    console.error('error while updating donors', e);
+  }
+}
+
+async function doUpdate(client) {
   const donorsInfo = await axios.get(
     'https://metadata.luckperms.net/data/donors'
   );
