@@ -712,5 +712,16 @@
         "value": "https://ore.spongepowered.org/Luck/LuckPerms/versions/5.3.98"
       }
     ]
+  },
+  {
+    "name": "lpc",
+    "title": "Using LuckPermsChat or LPC?",
+    "description": "LPC is not affiliated with Luckperms, and support for LPC is not provided here.",
+    "fields": [
+      {
+        "key": "LPC homepage",
+        "value": "https://www.spigotmc.org/resources/lpc-chat-formatter-1-7-10-1-20.68965/"
+      }
+    ]
   }
 ]
