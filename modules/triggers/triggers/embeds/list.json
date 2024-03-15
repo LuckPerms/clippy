@@ -715,11 +715,11 @@
   },
   {
     "name": "lpc",
-    "title": "Using LuckPermsChat or LPC?",
-    "description": "LPC is not affiliated with Luckperms, and support for LPC is not provided here.",
+    "title": "Using LuckPermsChat/LPC?",
+    "description": "LPC is not affiliated with LuckPerms, and support for LPC is not provided here.",
     "fields": [
       {
-        "key": "LPC homepage",
+        "key": "LPC Resource Page",
         "value": "https://www.spigotmc.org/resources/lpc.68965"
       }
     ]
