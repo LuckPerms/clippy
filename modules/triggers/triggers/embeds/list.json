@@ -727,11 +727,11 @@
   {
     "name": "permplugin",
     "aliases": ["powerranks", "pex", "gm"],
-    "title": "Using another permissions manager?",
-    "description": "For LuckPerms to fully work & handle all permission checks, it must be the only permission plugin installed on your server (unless you want to perform automatic migration)!",
+    "title": "Do you have more than one permissions plugin installed?",
+    "description": "For LuckPerms to work properly & handle all permission checks, it must be the only permission plugin installed on your server (unless you are in the process of performing automatic migration).",
     "fields": [
       {
-        "key": "Read more:",
+        "key": "More info",
         "value": "https://luckperms.net/wiki/Installation#other-permission-plugins"
       }
     ]
