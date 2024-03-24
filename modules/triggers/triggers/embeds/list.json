@@ -723,5 +723,17 @@
         "value": "https://www.spigotmc.org/resources/lpc.68965"
       }
     ]
+  },
+  {
+    "name": "permplugin",
+    "aliases": ["powerranks", "pex", "gm"],
+    "title": "More than one permissions plugin installed?",
+    "description": "For LuckPerms to work properly & handle all permission checks, it must be the only permission plugin installed on your server (unless you are in the process of performing automatic migration).",
+    "fields": [
+      {
+        "key": "More info",
+        "value": "https://luckperms.net/wiki/Installation#other-permission-plugins"
+      }
+    ]
   }
 ]
