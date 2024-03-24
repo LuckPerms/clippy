@@ -723,5 +723,17 @@
         "value": "https://www.spigotmc.org/resources/lpc.68965"
       }
     ]
+  },
+  {
+    "name": "permplugin",
+    "aliases": ["powerranks", "pex", "gm"],
+    "title": "Using another permissions manager?",
+    "description": "For LuckPerms to fully work & handle all permission checks, it must be the only permission plugin installed on your server (unless you want to perform automatic migration)!",
+    "fields": [
+      {
+        "key": "Read more:",
+        "value": "https://luckperms.net/wiki/Installation#other-permission-plugins"
+      }
+    ]
   }
 ]
