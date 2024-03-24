@@ -727,7 +727,7 @@
   {
     "name": "permplugin",
     "aliases": ["powerranks", "pex", "gm"],
-    "title": "Do you have more than one permissions plugin installed?",
+    "title": "More than one permissions plugin installed?",
     "description": "For LuckPerms to work properly & handle all permission checks, it must be the only permission plugin installed on your server (unless you are in the process of performing automatic migration).",
     "fields": [
       {
