@@ -72,5 +72,13 @@ module.exports = {
       link:
         'https://luckperms.net/wiki/Storage-system-errors#mysql-exceeded-max-connections',
     },
+    {
+      checks: [
+        /.+java\.sql\.SQLException: Unknown system variable 'transaction_isolation'/,
+      ],
+      title: 'Incorrect storage method used in config.',
+      link:
+        'https://luckperms.net/wiki/Storage-system-errors#transaction_isolation-error',
+    },
   ],
 };
