@@ -735,5 +735,17 @@
         "value": "https://luckperms.net/wiki/Installation#other-permission-plugins"
       }
     ]
+  },
+  {
+    "name": "permsuggestions",
+    "aliases": ["webperms"],
+    "title": "Permissions not showing up in the web editor?",
+    "description": "The web editor shows a list of permission suggestions matching your input. Do not rely solely on the prompts when adding permissions, as they're just suggestions. Instead, you may type in your permissions manually.",
+    "fields": [
+      {
+        "key": "Locate permissions using verbose",
+        "value": "https://luckperms.net/wiki/Verbose"
+      }
+    ]
   }
 ]
