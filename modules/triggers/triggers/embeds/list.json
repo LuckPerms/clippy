@@ -747,5 +747,21 @@
         "value": "https://luckperms.net/wiki/Verbose"
       }
     ]
+  },
+  {
+    "name": "limit",
+    "aliases": ["editorlimit"],
+    "title": "Web Editor Player Limit (500 players)",
+    "description": "The LuckPerms web editor is limited to loading a maximum of 500 players at once for performance and storage reasons.",
+    "fields": [
+      {
+        "key": "Need to edit a specific player?",
+        "value": "Use the in-game command:\n/lp user <username> editor\n\nThis generates a direct link containing only that player."
+      },
+      {
+        "key": "Need to mass-edit many users?",
+        "value": "Use the bulk update system instead:\nUse the in-game command: /lp bulkupdate\n\nWiki: https://luckperms.net/wiki/Bulk-Editing"
+      }
+    ]
   }
 ]
