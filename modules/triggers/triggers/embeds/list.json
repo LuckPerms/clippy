@@ -662,6 +662,26 @@
     ]
   },
   {
+    "name": "pterodb"
+    "aliases": ["docker", "dockerdb"],
+    "title": "Docker & Pterodactyl Database Issues"
+    "description": "If you are using Pterodactly and/or docker for your network and/or database. Here are some general tips to potentially help resolve some command issues that you may come accross or overlook."
+    "fields": [
+      {
+        "key": "Basic checklist for pterodactyl users ( If the database is on the same server as the gameserver )",
+        "value": "1. Make sure your database server is set to listen to connections from 0.0.0.0 ( bind-address option in one of the config files in /etc/mysql \n2. Make sure there is no firewall blocking the connection from 172.18.0.0/16 to 172.18.0.1 \n3. Use 172.18.0.1 or 172.17.0.1 instead of localhost as database host address ( only if the database is on the same machine ) \n4. Make sure that the user can connect from 172.18.0.0/16 to the MySQL server. You can achieve that by creating the database user as 'username'@172.18.%.% . If you used the internal database management of Pterodactyl, you can ignore this step"
+      },
+      {
+        "key": "# Make sure your back-ends are firewalled",
+        "value": "When setting up Bungeecord or any other Proxy server for your server, you most likely encountered the \"You have to disable online-mode on your backe-nd servers for the proxy to work\". This is correct, but also can become a huge security risk. This means that the backend servers are not performing a background check on the users connecting. How do you protect yourself? By firewalling your backend servers. If you don't do that, the backend servers are relying on a proxy ( not necessarily yours ) to tell them the userdata. If your  servers are open to the internet, an attacker could just use a local Proxy server to connect to your back-end and fake their identity ( same issue as \"Do not run your server/network in offline mode\" ). SO just make sure your back-ends are only avaiable trough local connections from the proxy itself."
+      },
+      {
+        "key": "**Note for Docker and Pterodactyl users:**",
+        "value": "Make sure to not create a port allocation like `0.0.0.0:25565`. Because Docker opens ports on its own in your firewall. To create usable internal allocations, you should use `172.17.0.1` as base IP `-v 172.17.0.1:25565:26656`. You could also disable Dockers IPTable support, but that is not recommended as that may cause a lot of issues with Dockers networking"        
+      }
+    ]
+  },
+  {
     "name": "offline",
     "aliases": ["cracked"],
     "title": "Offline mode/cracked servers",
