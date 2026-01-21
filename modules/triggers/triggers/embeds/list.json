@@ -429,14 +429,20 @@
   {
     "name": "colours",
     "aliases": [
-      "colors"
+      "colors",
+      "minimessage",
+      "mm"
     ],
-    "title": "Colour Codes",
-    "description": "A helpful list of all colour codes that you can use.",
+    "title": "Colour & Formatting Codes",
+    "description": "A helpful list of common colour & formatting codes that you can use.",
     "fields": [
       {
-        "key": "Colours",
+        "key": "Legacy `&`-style Colours",
         "value": "https://wiki.ess3.net/mc/"
+      },
+      {
+        "key": "MiniMessage Formatting",
+        "value": "https://docs.papermc.io/adventure/minimessage/format/"
       }
     ]
   },
@@ -632,7 +638,7 @@
     ],
     "title": "Running a network and getting UUID mismatches?",
     "description": "Please double check that:\n`1.` Velocity `velocity.toml` has `player-info-forwarding-mode` set to **`\"modern\"`** **and** `online_mode` set to **`true`**\n`2.` *All* backend servers' `server.properties` have `online-mode` set to **`false`** **and** `spigot.yml` have `bungeecord` set to **`false`**\n For more information visit: `https://docs.papermc.io/velocity/player-information-forwarding#configuring-modern-forwarding-for-paper`"
-  },  
+  },
   {
     "name": "tutorial",
     "aliases": ["tut", "yt"],
@@ -763,5 +769,81 @@
         "value": "Use the bulk update system instead:\nUse the in-game command: /lp bulkupdate\n\nWiki: https://luckperms.net/wiki/Bulk-Editing"
       }
     ]
+  },
+  {
+    "name": "hytale",
+    "title": "Hytale",
+    "description": "An **experimental/beta** version of LuckPerms is available for Hytale.\n\nAs this is still an early preview, several features aren't properly implemented just yet or need further refinement, and there may be bugs. Known issues are listed on the PR.",
+    "url": "https://luckperms.net/wiki/Hytale",
+    "fields": [
+      {
+        "key": "Downloads",
+        "value": "https://www.curseforge.com/hytale/mods/luckperms"
+      },
+      {
+        "key": "GitHub PR",
+        "value": "https://github.com/LuckPerms/LuckPerms/pull/4213"
+      }
+    ],
+    "wiki": true
+  },
+  {
+    "name": "folia",
+    "title": "Folia",
+    "description": "An **experimental/beta** version of LuckPerms is available for Folia.",
+    "fields": [
+      {
+        "key": "Downloads",
+        "value": "https://ci.lucko.me/job/LuckPerms-Folia/"
+      },
+      {
+        "key": "GitHub PR",
+        "value": "https://github.com/LuckPerms/LuckPerms/pull/3615"
+      }
+    ]
+  },
+  {
+    "name": "hytalechat",
+    "aliases": ["hychat"],
+    "title": "Built-in Chat Formatter for Hytale",
+    "description": "LuckPerms for Hytale includes a simple chat formatter. This formatter is only intended for simple chat formatting needs. For more advanced chat formatting, we recommend using a dedicated chat plugin that integrates with LuckPerms.\n\nThe chat format may be customized in the LuckPerms `config.yml`. MiniMessage is used for formatting.",
+    "url": "https://luckperms.net/wiki/Hytale#chat-formatting",
+    "fields": [
+      {
+        "key": "MiniMessage Documentation",
+        "value": "https://docs.papermc.io/adventure/minimessage/format/"
+      }
+    ],
+    "wiki": true
+  },
+  {
+    "name": "deleteall",
+    "aliases": ["resetall"],
+    "title": "Deleting all LuckPerms data",
+    "description": "The following command can be used to delete **all** LuckPerms users & groups.\n:bangbang: **There is __no ability to undo__ this action!** :bangbang:\n\nCommand: ||`lp bulkupdate all delete`|| (must be ran in console)",
+    "fields": [
+      {
+        "key": "Further info on bulk edits",
+        "value": "https://luckperms.net/wiki/Bulk-Editing"
+      }
+    ]
+  },
+  {
+    "name": "deleteusers",
+    "aliases": ["resetusers"],
+    "title": "Deleting all LuckPerms user data",
+    "description": "The following command can be used to delete **all** LuckPerms users. Your groups and tracks will be preserved, but any user-specific data will be deleted & all users will be set back to the `default` group.\n:bangbang: **There is __no ability to undo__ this action!** :bangbang:\n\nCommand: ||`lp bulkupdate users delete`|| (must be ran in console)",
+    "fields": [
+      {
+        "key": "Further info on bulk edits",
+        "value": "https://luckperms.net/wiki/Bulk-Editing"
+      }
+    ]
+  },
+  {
+    "name": "corruption",
+    "aliases": ["corrupt", "corrupted"],
+    "title": "Database Corrupted",
+    "description": "Unfortunately your LP database has been corrupted. If you have backups, now would be the time to pull them. If you don't have backups, looks like you're unfortunately learning their importance the hard way.\nPossible causes for the corruption includes but aren't limited to: stopping your server improperly, hand modifying the DB file."
   }
 ]
