@@ -805,13 +805,17 @@
   {
     "name": "hytalechat",
     "aliases": ["hychat"],
-    "title": "Built-in Chat Formatter for Hytale",
-    "description": "LuckPerms for Hytale includes a simple chat formatter. This formatter is only intended for simple chat formatting needs. For more advanced chat formatting, we recommend using a dedicated chat plugin that integrates with LuckPerms.\n\nThe chat format may be customized in the LuckPerms `config.yml`. MiniMessage is used for formatting.",
+    "title": "Chat Formatting for Hytale",
+    "description": "To format your Hytale chat using LuckPerms prefixes and suffixes, you will need a chat formatting plugin. For simple setups, our recommendation is to use **mini-chat-formatter**.\n\nPlease see the LuckPerms wiki for more information.\n\n*Note*: Early beta versions of LuckPerms for Hytale included a built-in chat formatter. This was removed in v5.5.34 since there are now an abundance of good chat formatting mod options.",
     "url": "https://luckperms.net/wiki/Hytale#chat-formatting",
     "fields": [
       {
-        "key": "MiniMessage Documentation",
-        "value": "https://docs.papermc.io/adventure/minimessage/format/"
+        "key": "mini-chat-formatter (GitHub)",
+        "value": "https://github.com/lucko/mini-chat-formatter"
+      },
+      {
+        "key": "mini-chat-formatter (CurseForge)",
+        "value": "https://www.curseforge.com/hytale/mods/mini-chat-formatter"
       }
     ],
     "wiki": true
